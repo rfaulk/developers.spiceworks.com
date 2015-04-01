@@ -1,0 +1,91 @@
+body.index {
+  text-align: center;
+
+  h1 {
+    font-size: 2.9em;
+
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h1,h2 {
+    font-weight: 100;
+    // letter-spacing: 3px;
+  }
+
+  section.hero {
+    background-image: image-url('home/hero.jpg');
+    background-size: cover;
+    color: $white;
+
+    h1 {
+      margin-top: 35px;
+      margin-bottom: 30px;
+    }
+
+    .buttons-wrapper {
+      margin-top: 44px;
+      margin-bottom: 16px;
+
+      .btn {
+        width: 226px;
+        margin-right: 30px;
+      }
+    }
+  }
+  section.features {
+    background-color: $sw_gray_five_percent;
+    color: $sw_gray_blue;
+
+    figure {
+      width: 32%;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 1.5%;
+      margin-top: 8px;
+      margin-bottom: 12px;
+
+      h2 {
+        font-size: 1.8em;
+        margin-top: 22px;
+        margin-bottom: 18px;
+      }
+      p {
+        font-size: .95em;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  section.app-center {
+    background-color: $sw_white;
+    text-align: left;
+    @extend .clearfix;
+
+    .copy-wrapper {
+      float: left;
+      width: 55%;
+    }
+    .image-wrapper {
+      float: right;
+      width: 39%;
+      margin-bottom: 60px;
+      margin-top: 16px;
+    }
+
+    a {
+      @extend .medium-blue-link;
+    }
+  }
+  section.faq {
+    border-top: 1px solid lightgray;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    p {
+      font-size: 1.3em;
+    }
+  }
+}
