@@ -12,7 +12,7 @@
     <%= partial 'layouts/analytics' %>
   </head>
 
-  <body data-page-name="<%#= page_slug %>" class="<%= page_classes %>">
+  <body data-page-name="<%= current_page.data.js_module %>" class="<%= page_classes %>">
     <%#= cms_snippet_content(:marketosignup, @cms_site) %>
 
     <%= partial 'layouts/nav_bar' %>

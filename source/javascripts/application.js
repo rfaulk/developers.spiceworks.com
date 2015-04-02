@@ -15,7 +15,7 @@
 //= require underscore
 //= require bootstrap
 //= require on_ready
-//= require_tree vendor
+//= require_tree ./vendor
 //= require_tree .
 
 $(function(){

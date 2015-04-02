@@ -1,0 +1,17 @@
+<% wrap_layout :layout do %>
+  <div class="content-wrapper sui-fluid-container">
+    <aside class="sidebar affix-top">
+      <h4>How it Works</h4>
+      <ul>
+        <li><%= link_to 'FAQ', '/how-it-works/faq.html', class: 'faq' %></li>
+        <li><%= link_to 'Brand Guide', '/how-it-works/brand-guide.html', class: 'brand-guide' %></li>
+        <li><%= link_to 'Privacy Policy', '/how-it-works/privacy-policy.html', class: 'privacy-policy' %></li>
+        <li><%= link_to 'App Ideas', '/how-it-works/app-ideas.html', class: 'app-ideas' %></li>
+        <li><%= link_to 'Marketing Tips', '/how-it-works/marketing-tips.html', class: 'marketing-tips' %></li>
+      </ul>
+    </aside>
+    <main class="with-left-sidebar">
+      <%= yield %>
+    </main>
+  </div>
+<% end %>
