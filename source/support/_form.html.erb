@@ -1,0 +1,29 @@
+<% form_tag 'google.com', remote: true, role: 'form' do %>
+  <div class="field">
+    <%= label_tag :email, class: 'sr-only' %>
+    <%= text_field_tag :email, placeholder: 'Email', type: :email, class: 'form-control' %>
+  </div>
+  <div class="field">
+    <%= label_tag :name, class: 'sr-only' %>
+    <%= text_field_tag :name, placeholder: 'Name', class: 'form-control' %>
+  </div>
+  <div class="field">
+    <%= label_tag :body, caption: "Message: ", class: 'sr-only' %>
+    <%= text_area_tag :body, placeholder: "Message", class: 'form-control' %>
+  </div>
+  <button type='submit' class='ladda-button btn btn-default btn-primary btn-blue btn-sm' data-style="zoom-in">
+    <span class="ladda-label">Send</span>
+  </button>
+<% end %>
+
+<div class="contact-support-form-messages">
+  <div class="form-message failure-message text-danger fade">
+    <p>Oops! <span class="contact-support-form-error-message">Something went wrong</span>, please try again.</p>
+  </div>
+
+  <div class="form-message success-message fade">
+    <p class="text-success">
+      Thank you for contacting support, we'll get back to you as soon as we can!
+    </p>
+  </div>
+</div>
