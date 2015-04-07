@@ -17,4 +17,4 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem 'jquery-rails', '~> 3.1', require: false
 gem 'bootstrap-sass', '~> 3.1', require: false
 gem 'underscore-rails', '~> 1.5', require: false
-gem 'sui', '~> 2.3', require: false, source: "http://gem-server.spice.spiceworks.com/"
+gem 'sui', '~> 2.4', require: false, source: "http://gem-server.spice.spiceworks.com/"

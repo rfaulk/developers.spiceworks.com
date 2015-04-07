@@ -8,7 +8,7 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- * depend_on sui
+ *= depend_on sui
  *= depend_on sui-variables
  *= depend_on sui-mixins
  *= depend_on bootstrap_overrides
@@ -24,7 +24,7 @@
  */
 
 // vendor
-// @import "sui-core";
+@import "sui-core";
 @import "sui-variables";
 @import "sui-mixins";
 
