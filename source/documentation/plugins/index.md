@@ -1,8 +1,3 @@
----
-title: 'Spiceworks Developers - Plugins Overview'
-layout: 'documentation'
----
-
 ### Creating Plugins
 Have ideas for making Spiceworks better?  Create your very own plugins for Spiceworks and share them with the community. All it takes is some Javascript knowledge and a little bit of ingenuity.
 

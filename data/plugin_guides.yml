@@ -1,0 +1,92 @@
+title: 'Modify Spiceworks'
+root: '/documentation/plugins'
+guides:
+  - title: 'Creating Plugins'
+    url: 'index'
+    sections:
+      - title: 'Creating Plugins'
+      - title: 'What Are Plugins?'
+      - title: 'Getting Started'
+      - title: 'Using Multiple Files For A Plugin'
+      - title: 'Code Templates'
+      - title: 'Spiceworks APIs'
+      - title: 'Tools To Make Plugins Easier'
+      - title: 'Cloning A Plugin'
+      - title: 'Firebug'
+      - title: 'Sharing Your Plugins'
+      - title: 'Helpful Plugin Pages'
+
+  - title: 'Creating Your First Plugin'
+    url: 'your-first-plugin'
+    sections:
+      - title: 'Creating A New Plugin'
+      - title: 'Adding Content'
+      - title: "What's Happening?"
+      - title: 'Using Javascript'
+
+  - title: 'Themes for Spiceworks'
+    url: 'themes'
+    sections:
+      - title: 'Updating The Look Of Spiceworks With Plugins'
+      - title: 'Changing The Background To An Image'
+      - title: "What's going on here?"
+
+  - title: 'Building Widgets'
+    url: 'building-widgets'
+    sections:
+      - title: 'Creating New Dashboard Widgets'
+      - title: "What's going on here?"
+
+  - title: 'Adding Navigation'
+    url: 'adding-navigation'
+    sections:
+      - title: 'Adding Navigational Elements'
+      - title: "What's going on here?"
+
+  - title: 'Reporting with Plugins'
+    url: 'reporting'
+    sections:
+      - title: 'Using Plugins To Run Reports'
+      - title: "What's going on here?"
+
+  - title: 'Messaging with Plugins'
+    url: 'messaging'
+    sections:
+      - title: 'Adding A Message To Spiceworks With Plugins'
+      - title: "What's going on here?"
+
+  - title: 'Responding to Events'
+    url: 'responding-to-events'
+    sections:
+      - title: 'Have Plugins Cause Spiceworks To Respond To Events Within The Application'
+      - title: "What's going on here?"
+
+  - title: 'Using Plugin Settings'
+    url: 'settings'
+    sections:
+      - title: 'Creating Configurable Plugins'
+      - title: "What's going on here?"
+
+  - title: 'Mutli File Plugins'
+    url: 'multi-file-plugins'
+    sections:
+      - title: 'Using Multiple files within a plugin'
+      - title: 'Adding an image'
+      - title: 'Adding and editing CSS file'
+      - title: 'Editing the JS file'
+      - title: 'View your masterpiece'
+
+  - title: 'Updating Help Desk Plugins'
+    url: 'helpdesk-v2'
+    sections:
+      - title: 'Updating Plugins for Helpdesk v2'
+      - title: "Example: Modifying the Helpdesk once it's ready"
+      - title: 'Example: Modifying the Helpdesk in response to events'
+      - title: 'Example: Modifying helpdesk comments'
+
+  - new_section: true
+    title: 'Examples'
+    url: 'examples/index'
+
+  - title: 'API Reference'
+    url: 'reference/index'

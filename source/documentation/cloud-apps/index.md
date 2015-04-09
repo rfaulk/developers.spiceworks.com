@@ -1,6 +1,6 @@
 ---
-title: 'Spiceworks Developers - Cloud Apps Overview'
-layout: 'documentation'
+title: 'Cloud Apps Overview'
+layout: 'plugins'
 ---
 
 # What is a Cloud App?

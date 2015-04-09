@@ -1,5 +1,5 @@
 ---
-title: 'Spiceworks Developers - Reports Overview'
+title: 'Reports Overview'
 layout: 'documentation'
 ---
 

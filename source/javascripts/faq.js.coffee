@@ -1,5 +1,6 @@
 do($ = jQuery) ->
-  developers.faq = 
-    init: ->
-      $('.faq').children('li').click ->
-        $(@).toggleClass('on');
+  developers['how-it-works'] =
+    faq:
+      init: ->
+        $('.faq').children('li').click ->
+          $(@).toggleClass('on');

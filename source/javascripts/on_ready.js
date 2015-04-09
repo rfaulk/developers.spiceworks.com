@@ -1,11 +1,11 @@
 var developers = developers || {};
- 
+
 onReady = {
   exec: function( pageName ) {
     var ns = developers,
-    parts = pageName.split(':'),
+    parts = pageName.split('_'),
     obj = ns;
-    
+
     while(parts.length){
       obj = obj[parts.shift()];
       if ( typeof obj === "undefined") {
@@ -15,10 +15,11 @@ onReady = {
       }
     }
   },
- 
+
   init: function() {
-    onReady.exec( document.body.getAttribute( "data-page-name" ) );
+    var classList = document.body.className.split(' ');
+    onReady.exec( classList[classList.length - 1] );
   }
 };
- 
+
 jQuery( document ).ready( onReady.init );

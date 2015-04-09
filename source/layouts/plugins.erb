@@ -1,0 +1,25 @@
+<% wrap_layout :layout do %>
+  <div class="content-wrapper sui-fluid-container with-sidebar with-breadcrumbs">
+    <ul class="breadcrumbs">
+      <li>
+        <%= link_to 'Documentation', '/documentation/index.html' %>
+      </li>
+      <li>
+        <%= current_guide.title %>
+      </li>
+    </ul>
+
+    <%= sidebar_for(data.plugin_guides) %>
+
+    <main class="with-left-sidebar">
+      <section class="intro">
+        <%= image_tag 'spiceworks-o.png', alt: "Spiceworks Swoosh" %>
+        <h1>Modify Spiceworks</h1>
+        <hr class="divider-shadow">
+      </section>
+      <section class="doc-content">
+        <%= yield %>
+      </section>
+    </main>
+  </div>
+<% end %>
