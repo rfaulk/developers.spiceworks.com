@@ -90,3 +90,8 @@ guides:
 
   - title: 'API Reference'
     url: 'reference/index'
+    sections:
+      - title: 'Plugin API Overview'
+        url: 'reference/index'
+      - title: 'Data API'
+        url: 'reference/data-api'

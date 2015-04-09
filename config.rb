@@ -50,11 +50,17 @@ helpers do
   def current_guide
     return @current_guide if @current_guide
 
-    path = current_page.path.gsub('.html', '')
-    guide_path = path.split("/")[-1]
-
-    @current_guide = data.plugin_guides.guides.find do |guide|
-      guide.url == guide_path
+    [data.plugin_guides].each do |guide_list|
+      guide_list.guides.each do |guide|
+        guide_url = "#{guide_list.root}/#{guide.url}.html"
+        guide_section_urls = Array(guide.sections).collect(&:url)
+          .map{ |p| "#{guide_list.root}/#{p}.html" }.compact
+        current_url = "/#{current_page.path}"
+        if guide_url == current_url ||
+          guide_section_urls.any?{ |u| u == current_url }
+          return @current_guide = guide
+        end
+      end
     end
   end
 
@@ -78,8 +84,11 @@ helpers do
         if guide.sections
           buffer << "<nav class='submenu'><ul class='nav'>"
           guide.sections.each do |section|
-            buffer << "<li>"
-            buffer << link_to(section.title, section.url || "##{section.title.parameterize}")
+            url = section.url ? "#{guide_list.root}/#{section.url}.html" :
+              "##{section.title.parameterize}"
+            current = (url == "/#{current_page.path}")
+            buffer << "<li class='#{'active' if current}'>"
+            buffer << link_to(section.title, url)
             buffer << "</li>"
           end
           buffer << "</ul></nav>"
