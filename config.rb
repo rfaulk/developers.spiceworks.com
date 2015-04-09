@@ -62,10 +62,11 @@ helpers do
         end
       end
     end
+    @current_guide
   end
 
   def page_title
-    current_guide.title
+    current_guide.title if current_guide
   end
 
   def sidebar_for(guide_list)
@@ -74,7 +75,7 @@ helpers do
     buffer << "<ul classs='nav' role='tablist'>"
 
     guide_list.guides.each do |guide|
-      current = (guide.url == current_guide.url)
+      current = (current_guide && (guide.url == current_guide.url))
       middleman_url = "#{guide_list.root}/#{guide.url}.html"
 
       buffer << "<hr />" if guide.new_section
