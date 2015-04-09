@@ -8,14 +8,14 @@
         <%= link_to 'Modify Spiceworks', '/documentation/plugins/index.html' %>
       </li>
       <li>
-        <%= current_guide.title %>
+        <%= page_title %>
       </li>
     </ul>
 
     <%= sidebar_for(data.plugin_guides) %>
 
     <main class="with-left-sidebar">
-      <section class="intro">
+      <section class="documentation-hero-header">
         <%= image_tag 'spiceworks-o.png', alt: "Spiceworks Swoosh" %>
         <h1>Modify Spiceworks</h1>
         <hr class="divider-shadow">

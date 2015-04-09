@@ -3,44 +3,30 @@ title: 'Documentation'
 ---
 
 <div class="content-wrapper sui-fluid-container">
-  <aside>
-    <nav class="sidebar">
-      <h4>Documentation</h4>
-      <ul>
-        <li><%= link_to 'Overview', '/documentation', class: 'overview'%></li>
-        <li><%= link_to 'Build Cloud-Connected Apps', '/documentation/cloud-apps', class: 'cloud-apps'%></li>
-        <li><%= link_to 'Modify Spiceworks', '/documentation/plugins', class: 'modify-spiceworks'%></li>
-        <li><%= link_to 'Create Custom Reports', '/documentation/create-custom-reports.html', class: 'custom-reports'%></li>
-        <li><%= link_to 'Share Spiceworks', '/documentation/share-spiceworks.html', class: 'share-spiceworks'%></li>
-      </ul>
-    </nav>
-  </aside>
-  <main class="with-left-sidebar">
+  <main>
     <section class="intro">
       <h1>Build your app on the Spiceworks Platform.</h1>
       <h2>Extend Spiceworks with plugins, reports and cloud integrations.</h2>
       <hr class="divider-shadow">
     </section>
     <section class="features">
-      <div class="centered">
-        <figure class="square">
-          <%= image_tag 'documentation/cloud-apps.png', alt: 'Cloud App Icon' %>
-          <figcaption>
-            <h3>Build cloud-connected apps</h3>
-            <p>Build apps that connect to your cloud service <br>from within Spiceworks.</p>
-            <%= link_to 'See the Documentation', '/documentation/cloud-apps', class: 'btn btn-blue' %>
-            <%= image_tag 'documentation/new-badge.png', class: 'new-label', alt: 'New Label' %>
-          </figcaption>
-        </figure>
-        <figure class="square">
-          <%= image_tag 'documentation/modify-spiceworks.png', alt: 'Modify Spiceworks Icon' %>
-          <figcaption>
-            <h3>Modify Spiceworks</h3>
-            <p>Modify the look and the feel of Spiceworks UI, create<br> dashboard widgets, or add features ot existing<br> Spicpeworks functionality.</p>
-            <%= link_to 'See the Documentation', '/documentation/plugins', class: 'btn btn-blue' %>
-          </figcaption>
-        </figure>
-      </div>
+      <figure class="square">
+        <%= image_tag 'documentation/cloud-apps.png', alt: 'Cloud App Icon' %>
+        <figcaption>
+          <h3>Build cloud-connected apps</h3>
+          <p>Build apps that connect to your cloud service <br>from within Spiceworks.</p>
+          <%= link_to 'See the Documentation', '/documentation/cloud-apps', class: 'btn btn-blue' %>
+          <%= image_tag 'documentation/new-badge.png', class: 'new-label', alt: 'New Label' %>
+        </figcaption>
+      </figure>
+      <figure class="square">
+        <%= image_tag 'documentation/modify-spiceworks.png', alt: 'Modify Spiceworks Icon' %>
+        <figcaption>
+          <h3>Modify Spiceworks</h3>
+          <p>Modify the look and the feel of Spiceworks UI, create<br> dashboard widgets, or add features ot existing<br> Spicpeworks functionality.</p>
+          <%= link_to 'See the Documentation', '/documentation/plugins', class: 'btn btn-blue' %>
+        </figcaption>
+      </figure>
       <figure class="horizontal">
         <div class="image-wrapper">
           <%= image_tag 'documentation/reports.png', alt: 'Reports Icon' %>
