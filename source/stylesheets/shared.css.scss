@@ -42,15 +42,6 @@ button, .btn, input[type="submit"] {
   }
 }
 
-table, tr, th, td {
-  border: 1px solid lightgray;
-  padding: 8px;
-  vertical-align: top;
-}
-th {
-  font-weight: 600;
-}
-
 .btn-blue {
   border-color: $sw_blue_alt1;
   background-color: $sw_blue_alt1;

@@ -27,6 +27,7 @@ require 'pry'
 # end
 
 page "/documentation/plugins/*", layout: :plugins
+page "/documentation/cloud-apps/*", layout: :cloud_apps
 
 # Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
@@ -39,6 +40,14 @@ page "/documentation/plugins/*", layout: :plugins
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+# Add support for GFM
+set :markdown, tables: true,
+               autolink: true,
+               fenced_code_blocks: true,
+               with_toc_data: true
+set :markdown_engine, :redcarpet
+activate :syntax
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -50,7 +59,7 @@ helpers do
   def current_guide
     return @current_guide if @current_guide
 
-    [data.plugin_guides].each do |guide_list|
+    [data.plugin_guides, data.app_guides].each do |guide_list|
       guide_list.guides.each do |guide|
         guide_url = "#{guide_list.root}/#{guide.url}.html"
         guide_section_urls = Array(guide.sections).collect(&:url)

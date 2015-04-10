@@ -1,0 +1,46 @@
+title: 'Build Cloud Apps'
+root: '/documentation/cloud-apps'
+guides:
+  - title: 'Cloud App Overview'
+    url: 'index'
+    sections:
+      - title: 'What is a Cloud App?'
+      - title: 'App Cards'
+      - title: 'Full Page Cards'
+      - title: 'Next Steps'
+
+  - title: 'Getting Started'
+    url: 'getting-started'
+    sections:
+      - title: 'Installing Spiceworks'
+      - title: 'Adding Content'
+      - title: "What's Happening?"
+      - title: 'Using Javascript'
+
+  - title: 'API Basics'
+    url: 'api-basics'
+    sections:
+      - title: 'Creating a Card'
+      - title: 'Card Lifecycle'
+      - title: 'Card Services'
+      - title: 'Requests'
+      - title: 'Events'
+      - title: 'Error Handling'
+
+  - new_section: true
+    title: 'Examples'
+    url: 'examples/index'
+
+  - title: 'API Reference'
+    url: 'reference/environment'
+    sections:
+      - title: 'Environment'
+        url: 'reference/environment'
+      - title: 'Help Desk'
+        url: 'reference/helpdesk'
+      - title: 'Inventory'
+        url: 'reference/inventory'
+      - title: 'People'
+        url: 'reference/people'
+      - title: 'Reporting'
+        url: 'reference/reporting'

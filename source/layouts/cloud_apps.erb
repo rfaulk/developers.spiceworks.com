@@ -1,0 +1,28 @@
+<% wrap_layout :layout do %>
+  <div class="content-wrapper sui-fluid-container with-sidebar with-breadcrumbs">
+    <ul class="breadcrumbs">
+      <li>
+        <%= link_to 'Documentation', '/documentation/index.html' %>
+      </li>
+      <li>
+        <%= link_to 'Build Cloud Apps', '/documentation/cloud-apps/index.html' %>
+      </li>
+      <li>
+        <%= page_title %>
+      </li>
+    </ul>
+
+    <%= sidebar_for(data.app_guides) %>
+
+    <main class="with-left-sidebar">
+      <section class="documentation-hero-header">
+        <%= image_tag 'spiceworks-o.png', alt: "Spiceworks Swoosh" %>
+        <h1>Build Cloud Apps</h1>
+        <hr class="divider-shadow">
+      </section>
+      <section class="doc-content">
+        <%= yield %>
+      </section>
+    </main>
+  </div>
+<% end %>

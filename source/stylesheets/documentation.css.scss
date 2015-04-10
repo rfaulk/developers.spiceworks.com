@@ -93,12 +93,30 @@ body.documentation_index {
   }
 }
 
-body.documentation {
+.doc-content {
+  table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
 
-  section.doc-content {
-    h3 {
-      margin-top: -50px;
-      padding-top: 70px;
+    th {
+      font-weight: bold;
     }
+
+    th, td {
+      padding: 6px 13px;
+      border: 1px solid #ddd;
+    }
+
+    tr {
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+    }
+  }
+
+  h3 {
+    margin-top: -50px;
+    padding-top: 70px;
   }
 }

@@ -13,6 +13,10 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
+# Use redcarpet for markdown to support GFM
+gem "redcarpet"
+gem "middleman-syntax"
+
 # Vendor Assets
 gem 'jquery-rails', '~> 3.1', require: false
 gem 'bootstrap-sass', '~> 3.1', require: false
