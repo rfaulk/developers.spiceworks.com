@@ -14,19 +14,7 @@
 //= require jquery_ujs
 //= require underscore
 //= require bootstrap
+//= require sui-main
 //= require on_ready
 //= require_tree ./vendor
 //= require_tree .
-
-$(function(){
-  //hack to make nav sticky
-  $('nav.domestic-nav').affix({ offset: {top: 42}});
-
-  //hack to add sign up button in main nav
-  var html  = '<li class="guest-user-navmenu menu">';
-      // html += ' <a href="#" data-modal-name="login" data-target="#" data-toggle="modal"><span>Login</span></a>';
-      html += ' <a href="#" data-modal-name="join" data-target="#sign-up-modal" data-toggle="modal" class="join-button"><span>Sign Up</span></a>';
-      html += '</li>';
-
-  $('.global-nav .menus').append(html);
-});

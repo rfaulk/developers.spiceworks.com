@@ -362,10 +362,13 @@ body {
 section .sui-fluid-container {
   padding: 3em 25px;
 }
+
 .content-wrapper {
   @extend .clearfix;
+  margin-top: 47px;
 }
-.content-wrapper.sui-fluid-container {
+
+.sui-fluid-container {
   padding: 40px 25px;
 }
 
@@ -402,7 +405,7 @@ section .sui-fluid-container {
 }
 
 .affix {
-  top: 25px;
+  top: 72px;
 }
 
 .affix-bottom {

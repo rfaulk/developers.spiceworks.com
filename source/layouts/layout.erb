@@ -14,12 +14,14 @@
     <%= partial 'layouts/analytics' %>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body data-page-name="<%= page_classes.split.last %>" class="<%= page_classes %>">
     <%#= cms_snippet_content(:marketosignup, @cms_site) %>
 
     <%= partial 'layouts/nav_bar' %>
 
-    <%= yield %>
+    <div class="content-wrapper">
+      <%= yield %>
+    </div>
 
     <%= partial 'layouts/footer' %>
 

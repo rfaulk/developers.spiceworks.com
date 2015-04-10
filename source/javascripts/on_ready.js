@@ -17,8 +17,7 @@ onReady = {
   },
 
   init: function() {
-    var classList = document.body.className.split(' ');
-    onReady.exec( classList[classList.length - 1] );
+    onReady.exec( document.body.getAttribute( 'data-page-name' ) );
   }
 };
 
