@@ -1,8 +1,3 @@
----
-title: 'Reports Overview'
-layout: 'documentation'
----
-
 ###Overview
 End of month. End of quarter. End of year. It's all the same. Somebody wants one of those pesky reports. What software is installed in our network? I need a list of all our hardware assets. How much disk space are we using? And you're left scrambling to make it happen. Not anymore.
 

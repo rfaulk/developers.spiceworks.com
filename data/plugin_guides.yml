@@ -84,6 +84,15 @@ guides:
       - title: 'Example: Modifying the Helpdesk in response to events'
       - title: 'Example: Modifying helpdesk comments'
 
+  - title: 'Creating Language Packs'
+    url: 'language-packs'
+    sections:
+      - title: 'Creating A Language Pack'
+      - title: 'Sharing A Language Pack'
+      - title: 'Installing A Language Pack'
+      - title: 'Enabling A Language Pack'
+      - title: 'Editing A Language Pack'
+
   - new_section: true
     title: 'Examples'
     url: 'examples/index'

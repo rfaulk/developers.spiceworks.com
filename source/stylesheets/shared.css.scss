@@ -255,6 +255,12 @@ ul, ol {
   margin-bottom: 46px;
 }
 
+.aside-wrapper {
+  float: left;
+  width: 292px;
+  min-height: 1px;
+}
+
 aside > nav.sidebar {
   margin-right: 50px;
   width: 242px;
@@ -393,6 +399,14 @@ section .sui-fluid-container {
       display: none;
     }
   }
+}
+
+.affix {
+  top: 25px;
+}
+
+.affix-bottom {
+  position: absolute;
 }
 
 section.intro {

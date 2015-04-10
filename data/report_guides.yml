@@ -1,0 +1,57 @@
+title: 'Custom Reports'
+root: '/documentation/reports'
+guides:
+  - title: 'Reports Overview'
+    url: 'index'
+    sections:
+      - title: 'Creating Plugins'
+      - title: 'What Are Plugins?'
+      - title: 'Getting Started'
+      - title: 'Using Multiple Files For A Plugin'
+      - title: 'Code Templates'
+      - title: 'Spiceworks APIs'
+      - title: 'Tools To Make Plugins Easier'
+      - title: 'Cloning A Plugin'
+      - title: 'Firebug'
+      - title: 'Sharing Your Plugins'
+      - title: 'Helpful Plugin Pages'
+
+  - title: 'Report Basics'
+    url: 'report-basics'
+    sections:
+      - title: 'Creating A New Plugin'
+      - title: 'Adding Content'
+      - title: "What's Happening?"
+      - title: 'Using Javascript'
+
+  - title: 'Find and Share Reports'
+    url: 'sharing-reports'
+    sections:
+      - title: 'Creating A New Plugin'
+      - title: 'Adding Content'
+      - title: "What's Happening?"
+      - title: 'Using Javascript'
+
+  - title: 'Import and Export Reports'
+    url: 'import-and-export-reports'
+    sections:
+      - title: 'Creating A New Plugin'
+      - title: 'Adding Content'
+      - title: "What's Happening?"
+      - title: 'Using Javascript'
+
+  - title: 'Advanced Tips'
+    url: 'advanced-tips'
+    sections:
+      - title: 'Creating A New Plugin'
+      - title: 'Adding Content'
+      - title: "What's Happening?"
+      - title: 'Using Javascript'
+
+  - title: 'Potential SQL Errors'
+    url: 'sql-errors'
+    sections:
+      - title: 'Creating A New Plugin'
+      - title: 'Adding Content'
+      - title: "What's Happening?"
+      - title: 'Using Javascript'
