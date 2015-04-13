@@ -16,7 +16,7 @@ body.support {
   }
 
   .columns-wrapper {
-    @extend .clearfix;
+    @include clearfix;
   }
 
   .column {
