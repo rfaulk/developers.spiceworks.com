@@ -1,18 +1,20 @@
 <header class="site-navigation sui-opt-in">
   <nav class="global-nav " data-navbar="global">
     <div class="nav-fluid-container">
-      <a class="global-nav_brand" href="/">Home</a>
+      <%= link_to 'Home', '/index.html', class: 'global-nav_brand' %>
       <img src="//static.spiceworks.com/assets/masthead/print_logo.png" class="global-nav_print-logo">
     </div>
   </nav>
   <nav class="domestic-nav" data-sticky="true" data-navbar="domestic">
     <div class="nav-fluid-container">
-      <a class="domestic-nav_brand" href="/"><div class="swoosh-logo"></div><span class="domestic-nav_title">Developers</span></a>
+      <% link_to '/index.html', class: 'domestic-nav_brand' do %>
+        <div class="swoosh-logo"></div><span class="domestic-nav_title">Developers</span>
+      <% end %>
       <ul class="domestic-menus">
-        <li class=" domestic-menus_entry"><a active="false" href="/how-it-works/faq.html">How It Works</a></li>
-        <li class=" domestic-menus_entry"><a active="false" href="/documentation">Documentation</a></li>
-        <li class=" domestic-menus_entry"><a active="false" href="/downloads">Downloads</a></li>
-        <li class=" domestic-menus_entry"><a active="false" href="/support">Support</a></li>
+        <li class=" domestic-menus_entry"><%= link_to 'How It Works', "/how-it-works/faq.html" %></li>
+        <li class=" domestic-menus_entry"><%= link_to 'Documentation', "/documentation/index.html" %></li>
+        <li class=" domestic-menus_entry"><%= link_to 'Downloads', "/downloads/index.html" %></li>
+        <li class=" domestic-menus_entry"><%= link_to 'Support', "/support/index.html" %></li>
       </ul>
     </div>
   </nav>

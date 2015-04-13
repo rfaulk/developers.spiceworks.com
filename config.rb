@@ -41,6 +41,10 @@ page "/documentation/reports/*", layout: :reports
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+# Make all links relative to support testing on
+# github.io/developers.spiceworks.com subdomain
+set :relative_links, true
+
 # Add support for GFM
 set :markdown, tables: true,
                autolink: true,
@@ -141,7 +145,7 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
