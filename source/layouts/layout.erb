@@ -25,6 +25,7 @@
 
     <%= partial 'layouts/footer' %>
 
+    <%= yield_content :scripts %>
     <%= javascript_include_tag "application" %>
   </body>
 </html>

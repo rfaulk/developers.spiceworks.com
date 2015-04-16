@@ -1,3 +1,8 @@
+<% content_for :scripts do %>
+  <%#= javascript_include_tag 'https://spiceworks.github.io/spiceworks-js-sdk/dist/spiceworks-sdk.js' %>
+  <%= javascript_include_tag 'https://rawgit.com/spiceworks/spiceworks-js-sdk/login/dist/spiceworks-sdk.js' %>
+<% end %>
+
 <div class="sui-fluid-container">
   <main>
     <section class="intro">
@@ -20,7 +25,7 @@
           tools to help you build and test Apps.
         </p>
         <%= link_to 'Install Now', 'http://download.spiceworks.com/DesktopDevEdition/current/Spiceworks.exe',
-          class: 'sui-bttn sui-bttn-primary download-box_button' %>
+          class: 'sui-bttn sui-bttn-primary download-dev-edition-button download-box_button' %>
       </div>
     </section>
   </main>
