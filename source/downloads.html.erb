@@ -1,0 +1,27 @@
+<div class="sui-fluid-container">
+  <main>
+    <section class="intro">
+      <h1>Spiceworks Developer Tools</h1>
+      <h2>
+        Get started building Apps for IT Pros.
+      </h2>
+      <hr class="divider-shadow">
+    </section>
+    <section class="download-list">
+      <div class="download-dev-edition download-box">
+        <%= image_tag 'spiceworks-app_icon.png',
+          alt: 'Download Spiceworks Developer Edition',
+          class: 'download-box_icon' %>
+        <h3 class='download-box_title'>Spiceworks: Developer Edition</h3>
+        <p class='download-box_description'>
+          Apps built for Spiceworks integrate inside of the Spiceworks Desktop
+          application used by IT Pros. Spiceworks Developer Edition is a special build of
+          the Spiceworks Desktop that includes sample data and
+          tools to help you build and test Apps.
+        </p>
+        <%= link_to 'Install Now', 'http://download.spiceworks.com/DesktopDevEdition/current/Spiceworks.exe',
+          class: 'sui-bttn sui-bttn-primary download-box_button' %>
+      </div>
+    </section>
+  </main>
+</div>
