@@ -23,6 +23,14 @@ textarea {
   min-height: 6em;
 }
 
+ol li {
+  list-style: decimal;
+}
+
+ol {
+  margin-left: 25px;
+}
+
 button, .btn, input[type="submit"] {
   background-color: $sw_lightgray;
   border: 1px solid fade-out($sw_lightgray, .5);
@@ -373,7 +381,7 @@ section .sui-fluid-container {
 }
 
 .with-sidebar.with-breadcrumbs {
-  padding-top: 15px;
+  margin-top: -25px;
 
   .breadcrumbs {
     margin-bottom: 25px;

@@ -19,7 +19,7 @@
 
     <%= partial 'layouts/nav_bar' %>
 
-    <div class="content-wrapper">
+    <div class="content-wrapper<%= ' sui-fluid-container' unless current_page.data.full_width %>">
       <%= yield %>
     </div>
 
