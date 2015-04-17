@@ -2,10 +2,10 @@
 
 April 16, 2015
 
-1. Build a quality product
+###1. Build a quality product
   1. Build an app that is stable and easily navigable. 
-  2. Ensure that your app’s content meets our Community Standards.
-  3. Follow our Branding Guidelines  
+  2. Ensure that your app’s content meets our [Community Standards](http://community.spiceworks.com/education/projects/Community_Guidelines).
+  3. Follow our [Branding Guidelines](http://www.spiceworks.com/brand/)  
   4. Keep your app’s description and categorization up-to-date.
   5. Don’t confuse, deceive, defraud, mislead, spam or surprise anyone. 
   6. Don't pretend to be someone else, and don't represent that your app is authorized by, endorsed by, or produced by another company or organization if that is not the case. 
@@ -13,7 +13,8 @@ April 16, 2015
   8. We don't allow products or services that facilitate unauthorized access to content on websites, such as circumventing paywalls or login restrictions. We also don't allow products or services that encourage, facilitate, or enable the unauthorized access, download, or streaming of copyrighted content or media.
   9. From time to time we may review user feedback of your app.  If your app receives an inappropriate level of negative feedback, we may remove your app from the Spiceworks App Center. 
   10.	Follow any instructions we include in our technical documentation.
-2. Give people control
+
+###2. Give people control
   1. Your privacy policy must be easy to find and understand.  Make sure it explains what data you are collecting and how you will use that data. 
   2. Make it clear that data you collect will be used in accordance with your privacy policy as opposed to Spiceworks’ privacy policy. 
   3. Your privacy policy URL will be displayed on your app page in the Spiceworks App Center.
@@ -22,7 +23,8 @@ April 16, 2015
   6. Delete all of a person’s data you have received from us if that person asks you to, unless you are required to keep it by law, regulation, or separate agreement with us. You may keep aggregated data only if no information identifying a specific person could be inferred or created from it.
   7. Obtain consent from people before you give us information that you independently collected from them.
   8. Provide meaningful customer support for your app, and make it easy for people to contact you.
-3. Protect data
+
+###3. Protect data
   1. Protect the information you receive from us against unauthorized access or use.
   2. Don’t proxy, request or collect Spiceworks usernames or passwords.
   3. If you use any partner services, make them sign a contract to protect any information you obtained from us or our users, limit their use of that information that is required for performance of the application, and keep it confidential.
@@ -30,16 +32,18 @@ April 16, 2015
   5. Don't transfer any data that you receive from us (including anonymous, aggregated, or derived data) to any ad network, data broker or other advertising or monetization-related service.
   6. Don't put Spiceworks data in a search engine or directory.
   7. If your app is no longer offered in the Spiceworks App Center, you must promptly delete all data you have received from us, including a person's content or information that you or third parties obtain from or through Spiceworks, absent explicit consent from your users. You must continue to treat information you have received from users in accordance with your privacy policy for your app. 
-4. Encourage proper use
+
+###4. Encourage proper use
   1. Respect the way Spiceworks looks and functions. Don't offer experiences that change it. 
-  2. Respect the limits we've placed on the Spiceworks API. 
+  2. Respect the limits we've placed on the [Spiceworks API](developers.spiceworks.com/api-terms). 
   3. Don’t build an app whose primary purpose is to redirect people off of Spiceworks. 
-  4. If you want to use our logos or brand, follow the guidelines in the Spiceworks Brand Guidelines.  Ad networks and data brokers must get our written permission before using our Platform, logos, or trademarks. 
+  4. If you want to use our logos or brand, follow the guidelines in the [Spiceworks Brand Guidelines](http://www.spiceworks.com/brand/).  Ad networks and data brokers must get our written permission before using our Platform, logos, or trademarks. 
   5. Don't sell, transfer or sublicense our code, APIs, or tools to anyone.
-  6. Only use our SDKs to develop and distribute apps for use with the Spiceworks Platform. You may also distribute any code libraries or sample source code included in the Spiceworks SDKs for inclusion in such apps.  Abide by our SDK Agreement. 
+  6. Only use our SDKs to develop and distribute apps for use with the Spiceworks Platform. You may also distribute any code libraries or sample source code included in the Spiceworks SDKs for inclusion in such apps.  Abide by our [SDK Agreement](developers.spiceworks.com/sdk-agreement). 
   7. Don’t modify, translate, create derivative works of, or reverse engineer any Spiceworks SDK or its components.
-  8. Be honest about your relationship with Spiceworks when talking to anyone. Comply with our Developer PR Guidelines and get approval from us before issuing any formal press release or blog post mentioning Spiceworks. 
-5. Follow the law
+  8. Be honest about your relationship with Spiceworks when talking to anyone. Comply with our [Developer PR Guidelines](http://www.spiceworks.com/brand/) and get approval from us before issuing any formal press release or blog post mentioning Spiceworks. 
+
+###5. Follow the law
   1. You are responsible for restricting access to your content in accordance with all applicable laws and regulations, including geo-filtering or age-gating access where required.
   2. Don’t provide or promote content that infringes upon, misappropriates or otherwise violates the rights of any third party.
   3. Ensure that you own or secure all rights necessary to display, distribute and deliver all content in your app.
@@ -50,15 +54,16 @@ April 16, 2015
   6. Comply with all applicable laws and regulations in the jurisdiction where your app is available. Do not expose Spiceworks or people who use Spiceworks to harm or legal liability as determined by us in our sole discretion.
   7. You agree to indemnify and hold us harmless from and against all damages, losses, and expenses of any kind (including reasonable legal fees and costs) related to any claim against us related to your app, service, actions, content or information.
   8. If you sell or transfer your app to a third party, they must also agree to these Terms & Conditions. 
-6. Things you should know
+
+###6. Things you should know
   1. We can analyze your app, content, and data for any purpose, including commercial. 
   2. We can monitor or collect data related to your use of our SDKs.
-  3. We will use information we receive from you or in connection with your Platform integration in accordance with our Privacy Policy.
+  3. We will use information we receive from you or in connection with your Platform integration in accordance with our [Privacy Policy](http://www.spiceworks.com/privacy/).
   4. You give us all rights necessary to enable your app to work with Spiceworks, including the right to incorporate information you provide to us into other parts of Spiceworks, and the right to attribute the source of information using your name or logos.
   5. We may share your contact info with people who want to contact you.
   6. We may use your name, logos, content, and information, including screenshots and video captures of your app, to demonstrate or feature your use of Spiceworks, worldwide and royalty-free. 
   7. You give us the right to link to or frame your app, and place content, including ads, around your app.
-  8. We can audit your app to ensure it is safe and does not violate any of our terms applicable to the app, including the terms in this document and the Spiceworks Terms of Use. If requested, you must provide us with proof that your app complies with our terms. 
+  8. We can audit your app to ensure it is safe and does not violate any of our terms applicable to the app, including the terms in this document and the Spiceworks [Terms of Use](http://www.spiceworks.com/terms/). If requested, you must provide us with proof that your app complies with our terms. 
   9. We can create apps or products that offer features and services similar to your app. 
   10. In the future, we may charge a fee to have an app available in the Spiceworks App Center as further described in Section 10.1.  
   11. Spiceworks and its licensors reserve all right, title and interest, including all intellectual property and other proprietary rights, in and to all Spiceworks SDKs.
@@ -70,46 +75,52 @@ April 16, 2015
   17. We may change these terms at any time.  We will notify you with a description of changes and your continued use of the Spiceworks App Center will constitute acceptance of those changes.
   18.	You can choose to promote your app through Spiceworks by contacting sales@spiceworks.com for more information.
   19.	We reserve the right to reject or remove any app for any reason.
-7. Login
+
+###7. Login
   1. Verify that you have integrated Login correctly. Your app shouldn't crash or hang during the testing process.
   2. Request only the data and publishing permissions your app needs. 
   3. If a person declines a permission, you can prompt them again after they indicate an intent to grant you the permission. 
-8. Ads
+
+###8. Ads
   1. Your app may not contain advertisements unless they relate to your own free trial or upgrade.
-9. Spiceworks App Center Requirements
+
+###9. Spiceworks App Center Requirements
   1. App Detail and Description:
-    a. Ensure the app’s name and information are grammatically correct. 
-    b. Don’t include keyword lists, excessive punctuation, or non-standard symbols. 
+    1. Ensure the app’s name and information are grammatically correct. 
+    2. Don’t include keyword lists, excessive punctuation, or non-standard symbols. 
   2. All Images:
-    a. Use high quality, relevant images that reflect the app experience.
-    b. Comply with our Spiceworks Brand Guidelines and Community Standards. 
-    c. Don't use pixelated, stretched, or distorted images.
-    d. Keep any text concise. Don't obstruct the images. 
-    e. Don’t include third-party logos, website URLs, promotional ads or 'Play' buttons. 
+    1. Use high quality, relevant images that reflect the app experience.
+    2. Comply with our Spiceworks Brand Guidelines and Community Standards. 
+    3. Don't use pixelated, stretched, or distorted images.
+    4. Keep any text concise. Don't obstruct the images. 
+    5. Don’t include third-party logos, website URLs, promotional ads or 'Play' buttons. 
   3. Icons:
-    a. Keep icons simple and free of visual clutter. 
-    b. Use a transparent or colored background. If your icon requires a white background, use a colored border. 
+    1. Keep icons simple and free of visual clutter. 
+    2. Use a transparent or colored background. If your icon requires a white background, use a colored border. 
   4. Do not use irrelevant, misleading, or excessive keywords in app descriptions, titles, or metadata.
   5. Do not attempt to change the placement of any app in the App Center or manipulate any App ratings or reviews by unauthorized means, such as fraudulent installs, paid or fake reviews or ratings, or offering incentives to rate App.
   6. Free should mean free.  If you offer your app for free, do not later try to charge users for it.  We encourage free trials, so long as it is clear to the user upfront. 
   7. You will be responsible for uploading your app to the Spiceworks App Center, providing required app information to users, and accurately disclosing the security permissions necessary for the app to function. Apps that are not properly uploaded will not be published in the Spiceworks App Center.
-  8. Spiceworks and its affiliates may include Developer Brand Features, screenshots, videos, and demonstrations of your apps and any content contained in, accessed by, or transmitted through the app in presentations, marketing materials, marketing events, developer events, financial reports, website listings (including links to your website), press releases, and customer lists (which includes, without limitation, customer lists posted on Spiceworks websites) for purposes of marketing the Spiceworks App Center, Spiceworks products and services, or publicizing your app. Spiceworks grants to Developer a limited, non-exclusive, worldwide, royalty-free license to use the Spiceworks App Center Badge for the period you have an app on the Spiceworks App Center solely for marketing purposes and only in accordance with the Spiceworks Brand Guidelines.
+  8. Spiceworks and its affiliates may include Developer Brand Features, screenshots, videos, and demonstrations of your apps and any content contained in, accessed by, or transmitted through the app in presentations, marketing materials, marketing events, developer events, financial reports, website listings (including links to your website), press releases, and customer lists (which includes, without limitation, customer lists posted on Spiceworks websites) for purposes of marketing the Spiceworks App Center, Spiceworks products and services, or publicizing your app. Spiceworks grants to Developer a limited, non-exclusive, worldwide, royalty-free license to use the [Spiceworks App Center Badge](http://www.spiceworks.com/brand/#nav-apps) for the period you have an app on the Spiceworks App Center solely for marketing purposes and only in accordance with the Spiceworks Brand Guidelines.
   9. Spiceworks may limit the number of apps you or your company may publish to the App Center.
-10. Payments & Revenue Share
+
+###10. Payments & Revenue Share
   1. Currently, we do not charge developers to offer their apps in the Spiceworks App Center.  However, in the future, we will charge developers a fee equal to a 30 percentage of the revenue generated by a developer’s app.  This fee would likely cover revenue generated as a result of the sale of apps or in app purchases.  If we do start charging this fee, we will give you notice ahead of time, explain how the fees will work and you can decide if you would like your app to remain in the Spiceworks App Center.  
   2. When we allow the purchase of apps and in-app purchasing, you must use the Spiceworks App Center purchase system to charge for your app and in app purchases.  
   3. In the event your pricing model is not supported by the Spiceworks App Center purchase system at the time you apply to the Spiceworks App Center, you may notify us and transact the payments through your own payment system.  This is only available if the pricing model offered in the Spiceworks App Center is consistent with your other pricing modes and we will require you to provide monthly accounting of all transactions related to the Spiceworks App Center.  If we start to support your pricing model, you will be required to convert to our payment system. 
   4. You will give us a 30 day notice if you change your pricing/licensing model (e.g., increase rate or change licensing terms).
   5. Whenever you complete a sales transaction, we will credit the proceeds from that sale, less our fees, to your balance.  If your transaction was in a currency other than US Dollars, proceeds from the sale will be converted at the time of the transaction according to that day’s published exchange rate.
   6. We will payout your balance according to the following rules:
-    a. We will payout once per month.
-    b. Your current banking information and any other information we need to make the payment on record, including if required, identification and tax and business formation documentation.
-    c. We will payout if your balance for any given pay period is greater than or equal to $100 US Dollars.  If your balance is less than $100, we will roll payment over to the next month, unless your account is being deactivated or deleted, or if it has been one year since either your last redemption payment or the submission of your app.
-12. Termination
+    1. We will payout once per month.
+    2. Your current banking information and any other information we need to make the payment on record, including if required, identification and tax and business formation documentation.
+    3. We will payout if your balance for any given pay period is greater than or equal to $100 US Dollars.  If your balance is less than $100, we will roll payment over to the next month, unless your account is being deactivated or deleted, or if it has been one year since either your last redemption payment or the submission of your app.
+
+###11. Termination
   1. You can decide at any time that you no longer wish for your App to be in the Spiceworks App Center.  You must notify us spiceworksappcenter@spiceworks.com and we will work with you to remove your app.  
   2. If you violate and of these terms or if we determine that your app can no longer be a part of the Spiceworks App Center, then we may terminate our relationship with you with respect to your app and no longer offer your app on the Spiceworks App Center.  If that happens we will try to give you as much notice as practicable.  
   3. Whatever the reason, if your app is no longer going to be a part of the Spiceworks App Center, then you must contact all users of your app, give them fair warning and describe how you will support them going forward.
   4. Section 5 and all other Spiceworks terms applicable to your use of the Spiceworks App Center that, by their nature, are intended to survive, will survive even if our relationship with you with respect to your app is terminated.  
-Your use of the Spiceworks App Center is subject to the terms and conditions below, as well as to the Spiceworks Terms of Use, which are incorporated into these terms and conditions.
+
+Your use of the Spiceworks App Center is subject to the terms and conditions below, as well as to the Spiceworks [Terms of Use](www.spiceworks.com/terms), which are incorporated into these terms and conditions.
 
 Spiceworks reserves the right, at its sole discretion, to change, modify, add or remove portions of these terms at any time.  You should visit this page periodically to review the most current terms, because you are bound by them if you use the Spiceworks App Center.  Your continued use of the Spiceworks App Center indicates your acceptance and agreement to the changes.  As long as you comply with these terms and the Spiceworks Terms of Use, Spiceworks grants you a personal, non-exclusive, non-transferable, limited privilege to use the Spiceworks App Center.  
