@@ -1,16 +1,8 @@
 title: 'Build Cloud Apps'
 root: '/documentation/cloud-apps'
 guides:
-  - title: 'Cloud App Overview'
-    url: 'index'
-    sections:
-      - title: 'What is a Cloud App?'
-      - title: 'App Cards'
-      - title: 'Full Page Cards'
-      - title: 'Next Steps'
-
   - title: 'Getting Started'
-    url: 'getting-started'
+    url: 'index'
     sections:
       - title: 'Installing Spiceworks'
       - title: 'Adding Content'
