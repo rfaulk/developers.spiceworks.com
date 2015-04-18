@@ -4,8 +4,8 @@ April 16, 2015
 
 ###1. Build a quality product
   1. Build an app that is stable and easily navigable. 
-  2. Ensure that your app’s content meets our [Community Standards](http://community.spiceworks.com/education/projects/Community_Guidelines).
-  3. Follow our [Branding Guidelines](http://www.spiceworks.com/brand/)  
+  2. Ensure that your app’s content meets our <a href="http://community.spiceworks.com/education/projects/Community_Guidelines"" target="_blank">Community Standards<a>.
+  3. Follow our <a href="http://www.spiceworks.com/brand/" target="_blank">Branding Guidelines</a>
   4. Keep your app’s description and categorization up-to-date.
   5. Don’t confuse, deceive, defraud, mislead, spam or surprise anyone. 
   6. Don't pretend to be someone else, and don't represent that your app is authorized by, endorsed by, or produced by another company or organization if that is not the case. 
@@ -35,13 +35,13 @@ April 16, 2015
 
 ###4. Encourage proper use
   1. Respect the way Spiceworks looks and functions. Don't offer experiences that change it. 
-  2. Respect the limits we've placed on the [Spiceworks API](developers.spiceworks.com/api-terms). 
+  2. Respect the limits we've placed on the <a href="developers.spiceworks.com/api-terms" target="_blank">Spiceworks API</a>. 
   3. Don’t build an app whose primary purpose is to redirect people off of Spiceworks. 
-  4. If you want to use our logos or brand, follow the guidelines in the [Spiceworks Brand Guidelines](http://www.spiceworks.com/brand/).  Ad networks and data brokers must get our written permission before using our Platform, logos, or trademarks. 
+  4. If you want to use our logos or brand, follow the guidelines in the <a href="http://www.spiceworks.com/brand/" target="_blank">Spiceworks Brand Guidelines</a>.  Ad networks and data brokers must get our written permission before using our Platform, logos, or trademarks. 
   5. Don't sell, transfer or sublicense our code, APIs, or tools to anyone.
-  6. Only use our SDKs to develop and distribute apps for use with the Spiceworks Platform. You may also distribute any code libraries or sample source code included in the Spiceworks SDKs for inclusion in such apps.  Abide by our [SDK Agreement](developers.spiceworks.com/sdk-agreement). 
+  6. Only use our SDKs to develop and distribute apps for use with the Spiceworks Platform. You may also distribute any code libraries or sample source code included in the Spiceworks SDKs for inclusion in such apps.  Abide by our <a href="developers.spiceworks.com/sdk-agreement" target="_blank">SDK Agreement</a>. 
   7. Don’t modify, translate, create derivative works of, or reverse engineer any Spiceworks SDK or its components.
-  8. Be honest about your relationship with Spiceworks when talking to anyone. Comply with our [Developer PR Guidelines](http://www.spiceworks.com/brand/) and get approval from us before issuing any formal press release or blog post mentioning Spiceworks. 
+  8. Be honest about your relationship with Spiceworks when talking to anyone. Comply with our <a href="http://www.spiceworks.com/brand/" target="_blank">Developer PR Guidelines</a> and get approval from us before issuing any formal press release or blog post mentioning Spiceworks. 
 
 ###5. Follow the law
   1. You are responsible for restricting access to your content in accordance with all applicable laws and regulations, including geo-filtering or age-gating access where required.
@@ -58,12 +58,12 @@ April 16, 2015
 ###6. Things you should know
   1. We can analyze your app, content, and data for any purpose, including commercial. 
   2. We can monitor or collect data related to your use of our SDKs.
-  3. We will use information we receive from you or in connection with your Platform integration in accordance with our [Privacy Policy](http://www.spiceworks.com/privacy/).
+  3. We will use information we receive from you or in connection with your Platform integration in accordance with our <a href="http://www.spiceworks.com/privacy/" target="_blank">Privacy Policy</a>.
   4. You give us all rights necessary to enable your app to work with Spiceworks, including the right to incorporate information you provide to us into other parts of Spiceworks, and the right to attribute the source of information using your name or logos.
   5. We may share your contact info with people who want to contact you.
   6. We may use your name, logos, content, and information, including screenshots and video captures of your app, to demonstrate or feature your use of Spiceworks, worldwide and royalty-free. 
   7. You give us the right to link to or frame your app, and place content, including ads, around your app.
-  8. We can audit your app to ensure it is safe and does not violate any of our terms applicable to the app, including the terms in this document and the Spiceworks [Terms of Use](http://www.spiceworks.com/terms/). If requested, you must provide us with proof that your app complies with our terms. 
+  8. We can audit your app to ensure it is safe and does not violate any of our terms applicable to the app, including the terms in this document and the Spiceworks <a href="http://www.spiceworks.com/terms/" target="_blank">Terms of Use</a>. If requested, you must provide us with proof that your app complies with our terms. 
   9. We can create apps or products that offer features and services similar to your app. 
   10. In the future, we may charge a fee to have an app available in the Spiceworks App Center as further described in Section 10.1.  
   11. Spiceworks and its licensors reserve all right, title and interest, including all intellectual property and other proprietary rights, in and to all Spiceworks SDKs.
@@ -101,7 +101,7 @@ April 16, 2015
   5. Do not attempt to change the placement of any app in the App Center or manipulate any App ratings or reviews by unauthorized means, such as fraudulent installs, paid or fake reviews or ratings, or offering incentives to rate App.
   6. Free should mean free.  If you offer your app for free, do not later try to charge users for it.  We encourage free trials, so long as it is clear to the user upfront. 
   7. You will be responsible for uploading your app to the Spiceworks App Center, providing required app information to users, and accurately disclosing the security permissions necessary for the app to function. Apps that are not properly uploaded will not be published in the Spiceworks App Center.
-  8. Spiceworks and its affiliates may include Developer Brand Features, screenshots, videos, and demonstrations of your apps and any content contained in, accessed by, or transmitted through the app in presentations, marketing materials, marketing events, developer events, financial reports, website listings (including links to your website), press releases, and customer lists (which includes, without limitation, customer lists posted on Spiceworks websites) for purposes of marketing the Spiceworks App Center, Spiceworks products and services, or publicizing your app. Spiceworks grants to Developer a limited, non-exclusive, worldwide, royalty-free license to use the [Spiceworks App Center Badge](http://www.spiceworks.com/brand/#nav-apps) for the period you have an app on the Spiceworks App Center solely for marketing purposes and only in accordance with the Spiceworks Brand Guidelines.
+  8. Spiceworks and its affiliates may include Developer Brand Features, screenshots, videos, and demonstrations of your apps and any content contained in, accessed by, or transmitted through the app in presentations, marketing materials, marketing events, developer events, financial reports, website listings (including links to your website), press releases, and customer lists (which includes, without limitation, customer lists posted on Spiceworks websites) for purposes of marketing the Spiceworks App Center, Spiceworks products and services, or publicizing your app. Spiceworks grants to Developer a limited, non-exclusive, worldwide, royalty-free license to use the <a href="http://www.spiceworks.com/brand/#nav-apps" target="_blank">Spiceworks App Center Badge</a> for the period you have an app on the Spiceworks App Center solely for marketing purposes and only in accordance with the Spiceworks Brand Guidelines.
   9. Spiceworks may limit the number of apps you or your company may publish to the App Center.
 
 ###10. Payments & Revenue Share
@@ -121,6 +121,6 @@ April 16, 2015
   3. Whatever the reason, if your app is no longer going to be a part of the Spiceworks App Center, then you must contact all users of your app, give them fair warning and describe how you will support them going forward.
   4. Section 5 and all other Spiceworks terms applicable to your use of the Spiceworks App Center that, by their nature, are intended to survive, will survive even if our relationship with you with respect to your app is terminated.  
 
-Your use of the Spiceworks App Center is subject to the terms and conditions below, as well as to the Spiceworks [Terms of Use](www.spiceworks.com/terms), which are incorporated into these terms and conditions.
+Your use of the Spiceworks App Center is subject to the terms and conditions below, as well as to the Spiceworks <a href="www.spiceworks.com/terms" target="_blank">Terms of Use</a>, which are incorporated into these terms and conditions.
 
 Spiceworks reserves the right, at its sole discretion, to change, modify, add or remove portions of these terms at any time.  You should visit this page periodically to review the most current terms, because you are bound by them if you use the Spiceworks App Center.  Your continued use of the Spiceworks App Center indicates your acceptance and agreement to the changes.  As long as you comply with these terms and the Spiceworks Terms of Use, Spiceworks grants you a personal, non-exclusive, non-transferable, limited privilege to use the Spiceworks App Center.  
