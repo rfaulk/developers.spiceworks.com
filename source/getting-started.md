@@ -33,8 +33,9 @@ Much like developers in the past tapped into the Spiceworks Community to find ou
 
 ## Ready to get cracking?
 All pumped up and ready to get to developing? Great!
-1.	Install the <a href="http://developers.spiceworks.com/downloads.html" target="_blank">Spiceworks Developer Edition</a>. (The developer edition must be installed in a Windows environment.)
-2.	Check out the <a href="http://developers.spiceworks.com/documentation/cloud-apps/" target="_blank">Documentation</a>.
+
+1. Install the <a href="http://developers.spiceworks.com/downloads.html" target="_blank">Spiceworks Developer Edition</a>. (The developer edition must be installed in a Windows environment.)
+2. Check out the <a href="http://developers.spiceworks.com/documentation/cloud-apps/" target="_blank">Documentation</a>.
 
 ## Why develop apps for Spiceworks?
 What makes Spiceworks different than other platforms?
@@ -42,7 +43,7 @@ What makes Spiceworks different than other platforms?
 - **TRUST:** You’re not unknown to the IT pro when build an app for Spiceworks – you’re part of a community that they already know and trust to deliver value in their IT day.
 - **INSTANT DATA:** By incorporating our inventory data, you can reduce one of the biggest hurdles to trying new apps – the configuration step.  The Spiceworks application already knows about the IT pro’s environment.
 - **AUTOMATIC UPDATES:** Updates to your app get to all users instantaneously.  Since your app is in the cloud, when you make changes or add functionality, all the users of your app get the new functionality right away.
-- **$$$ POTENTIAL:***  Unlike other app marketplaces where you’re competing with a marketplace jam-packed full of apps, the Spiceworks App Center is new and filled with IT pros looking for solutions to make their day easier.  This makes the possibility to make real money, well, real. Let’s just say, for example, your app costs $5 a month or $500 for a year, you would only need to sell 200 to have an app that generates $100,000 per year. When your app is in front of an audience eagerly looking for apps that help them manage IT, 200 downloads seems pretty doable.
+- **$$$ POTENTIAL:**  Unlike other app marketplaces where you’re competing with a marketplace jam-packed full of apps, the Spiceworks App Center is new and filled with IT pros looking for solutions to make their day easier.  This makes the possibility to make real money, well, real. Let’s just say, for example, your app costs $5 a month or $500 for a year, you would only need to sell 200 to have an app that generates $100,000 per year. When your app is in front of an audience eagerly looking for apps that help them manage IT, 200 downloads seems pretty doable.
 
 ## How to market your app?
 Looking for Here are some general marketing tips for your app?
@@ -51,4 +52,5 @@ Looking for Here are some general marketing tips for your app?
 - Use the description to spell out the problem you’re solving for the IT pro. This is your chance to elaborate on why they need your app.  Don’t just list features, make sure to tell them the benefits.
 - Include a free trial.  IT pros want to try out apps before they buy.  They are more likely to consider your app if they can try it out for free beforehand.
 - Encourage feedback and reviews on your app.  SpiceHeads trust each other.  Gathering feedback from SpiceHeads will help you to not only improve your app but also build your and your app’s credibility in Spiceworks (which means more downloads).
+
 Interested in advertising your app in Spiceworks?  Contact sales@spiceworks.com
