@@ -25,7 +25,7 @@ guides:
 
   - new_section: true
     title: 'Examples'
-    url: 'https://github.com/spiceworks/spiceworks-js-sdk/tree/master/examples'
+    url: '//github.com/spiceworks/spiceworks-js-sdk/tree/master/examples'
 
   - title: 'API Reference'
     url: 'reference/environment'

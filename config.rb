@@ -100,7 +100,7 @@ helpers do
 
     guide_list.guides.each do |guide|
       current = (current_guide && (guide.url == current_guide.url))
-      middleman_url = "#{guide_list.root}/#{guide.url}.html"
+      middleman_url = guide.url.start_with?('//') ? guide.url : "#{guide_list.root}/#{guide.url}.html"
 
       buffer << "<hr />" if guide.new_section
       buffer << "<li class='#{'active' if current}'>"
