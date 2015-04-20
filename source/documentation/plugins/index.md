@@ -134,7 +134,7 @@ The Spiceworks APIs are the tools that allow you to make change to Spiceworks. F
 [Hello_World_Widget_Plugin_Tutorial]: /documentation/plugins/your-first-plugin.html
 [Plugin_Configuration_Tutorial]: /documentation/plugins/settings.html
 [Multiple_Files_Plugin_Tutorial]: /documentation/plugins/multi-file-plugins.html
-[HTML_Plugin_Tutorial]: /docs/in-spiceworks/html-plugin-tutorial
+[HTML_Plugin_Tutorial]: /documentation/plugins/html-plugins.html
 [Run_Report_Plugin_Tutorial]: /documentation/plugins/reporting.html
 [Message_Plugin_Tutorial]: /documentation/plugins/messaging.html
 [Plugins]: /docs/in-spiceworks#plugins

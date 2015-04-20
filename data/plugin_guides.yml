@@ -76,6 +76,16 @@ guides:
       - title: 'Editing the JS file'
       - title: 'View your masterpiece'
 
+  - title: 'Creating HTML Plugins'
+    url: 'html-plugins'
+    sections:
+      - title: 'Create & Edit the Plugin'
+        url: '#create-&-edit-the-plugin'
+      - title: 'Add & Edit the HTML'
+        url: '#add-&-edit-the-html-file'
+      - title: 'Edit the JS file'
+      - title: 'View Your Masterpiece'
+
   - title: 'Updating Help Desk Plugins'
     url: 'helpdesk-v2'
     sections:
