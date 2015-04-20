@@ -5,9 +5,13 @@ guides:
     url: 'index'
     sections:
       - title: 'Installing Spiceworks'
-      - title: 'Adding Content'
-      - title: "What's Happening?"
-      - title: 'Using Javascript'
+      - title: 'Create a Place for Your App'
+        url: '#create-a-place-for-your-app-to-live'
+      - title: 'Register Your App with Spiceworks'
+        url: '#create-&-register-your-web-app-with-spiceworks'
+      - title: 'Spiceworks JS API Client'
+        url: '#add-javascript-to-your-application-to-get-data-from-spiceworks'
+      - title: 'Resources'
 
   - title: 'API Basics'
     url: 'api-basics'
@@ -21,7 +25,7 @@ guides:
 
   - new_section: true
     title: 'Examples'
-    url: 'examples/index'
+    url: 'https://github.com/spiceworks/spiceworks-js-sdk/tree/master/examples'
 
   - title: 'API Reference'
     url: 'reference/environment'
