@@ -130,7 +130,7 @@ The Spiceworks APIs are the tools that allow you to make change to Spiceworks. F
 * [Extending Spiceworks Group](http://community.spiceworks.com/group/show/300): This is the group to join to discuss plugins with other Spiceworks users.
 * [Plugin Directory][Plugin_Directory]: Here you can download the plugins that have been created and deemed working.
 
-[Spiceworks_Plugin_API]: /documentation/plugins/reference
+[Spiceworks_Plugin_API]: /documentation/plugins/reference/
 [Hello_World_Widget_Plugin_Tutorial]: /documentation/plugins/your-first-plugin.html
 [Plugin_Configuration_Tutorial]: /documentation/plugins/settings.html
 [Multiple_Files_Plugin_Tutorial]: /documentation/plugins/multi-file-plugins.html
