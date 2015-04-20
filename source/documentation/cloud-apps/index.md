@@ -179,16 +179,15 @@ Now that you've gone over how to create an application for Spiceworks, you're
 ready to be released to the wild. Here are some resources that should help you
 along the way (or, "it's dangerous to go alone..." joke):
 
-* [Download the Spiceworks Desktop: Developer Edition](http://community.spiceworks.com/private/app-center-dev-tools-beta/download)
+* [Download the Spiceworks Desktop: Developer Edition](/downloads.html)
 * [Spiceworks Cloud App Examples][Card Examples]
-* [Spiceworks App API Basics](https://github.com/spiceworks/spiceworks-js-sdk/blob/master/docs/CanvasAppApis.md)
-* [Spiceworks Environment API Reference](https://github.com/spiceworks/spiceworks-js-sdk/blob/master/docs/apis/environment.md)
-* [Spiceworks Help Desk API Reference](https://github.com/spiceworks/spiceworks-js-sdk/blob/master/docs/apis/helpdesk.md)
-* [Spiceworks Inventory API Reference](https://github.com/spiceworks/spiceworks-js-sdk/blob/master/docs/apis/inventory.md)
-* [Spiceworks People API Reference](https://github.com/spiceworks/spiceworks-js-sdk/blob/master/docs/apis/people.md)
-* [Spiceworks Reporting API Reference](https://github.com/spiceworks/spiceworks-js-sdk/blob/master/docs/apis/reporting.md)
+* [Spiceworks App API Basics](/documentation/cloud-apps/api-basics.html)
+* [Spiceworks Environment API Reference](/documentation/cloud-apps/reference/environment.html)
+* [Spiceworks Help Desk API Reference](/documentation/cloud-apps/reference/helpdesk.html)
+* [Spiceworks Inventory API Reference](/documentation/cloud-apps/reference/inventory.html)
+* [Spiceworks People API Reference](/documentation/cloud-apps/reference/people.html)
+* [Spiceworks Reporting API Reference](/documentation/cloud-apps/reference/reporting.html)
 
-[Cloud App API Basics]: https://github.com/spiceworks/spiceworks-js-sdk/blob/master/docs/CanvasAppApis.md "Spiceworks App API Basics"
-[Desktop Dev Download]: http://www.spiceworks.com/ "Download the Spiceworks Desktop: Development Version"
-[Card Examples]: http://github.com/spiceworks/spiceworks-js-sdk/tree/master/docs/examples "Spiceworks Cloud App Card Examples"
-[Card Examples Readme]: http://github.com/spiceworks/ "Spiceworks Cloud App Card Examples: README"
+[Cloud App API Basics]: /documentation/cloud-apps/api-basics.html "Spiceworks App API Basics"
+[Desktop Dev Download]: /downloads.html "Download the Spiceworks Desktop: Development Version"
+[Card Examples]: //github.com/spiceworks/spiceworks-js-sdk/tree/master/examples "Spiceworks Cloud App Examples"
