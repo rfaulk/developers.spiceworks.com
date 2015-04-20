@@ -62,3 +62,33 @@ body.support_faq {
     }
   }
 }
+
+.contact-support {
+  .mktoGutter, .mktoOffset {
+    display: none;
+  }
+
+  .mktoForm {
+    width: 100%;
+
+    .mktoRequiredField .mktoAsterix {
+      display: none;
+    }
+
+    .mktoFieldWrap, .mktoFormCol {
+      width: 100%;
+    }
+
+    .mktoField {
+      width: 100% !important;
+      height: 34px;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .mktoButtonWrap {
+      margin-left: 0 !important;
+    }
+  }
+}
