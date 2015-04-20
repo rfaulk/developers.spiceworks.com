@@ -8,7 +8,7 @@ actual example to show you how to create a cloud app along the way.
 
 Before starting to build your cloud app, you first need to install the
 [Spiceworks Desktop: Developer
-Edition](http://community.spiceworks.com/private/app-center-dev-tools-beta/download).
+Edition][Download DE].
 The Spiceworks Desktop is where users will ultimately be installing and loading
 your cloud app.  The developer edition of the Spiceworks Desktop has some small
 admin features that make it easier to build and test your cloud app during
@@ -19,7 +19,7 @@ need to be installed in a Windows environment (Note: We are currently working on
 development tools that avoid this requirement).
 
 Install the [Spiceworks Desktop: Developer
-Edition](http://community.spiceworks.com/private/app-center-dev-tools-beta/download).
+Edition][Download DE].
 
 ## Create a place for your app to live
 
@@ -179,7 +179,7 @@ Now that you've gone over how to create an application for Spiceworks, you're
 ready to be released to the wild. Here are some resources that should help you
 along the way (or, "it's dangerous to go alone..." joke):
 
-* [Download the Spiceworks Desktop: Developer Edition](/downloads.html)
+* [Download the Spiceworks Desktop: Developer Edition][Download DE]
 * [Spiceworks Cloud App Examples][Card Examples]
 * [Spiceworks App API Basics](/documentation/cloud-apps/api-basics.html)
 * [Spiceworks Environment API Reference](/documentation/cloud-apps/reference/environment.html)
@@ -188,6 +188,7 @@ along the way (or, "it's dangerous to go alone..." joke):
 * [Spiceworks People API Reference](/documentation/cloud-apps/reference/people.html)
 * [Spiceworks Reporting API Reference](/documentation/cloud-apps/reference/reporting.html)
 
+[Download DE]: /downloads.html "Download Spiceworks Developer Edition"
 [Cloud App API Basics]: /documentation/cloud-apps/api-basics.html "Spiceworks App API Basics"
 [Desktop Dev Download]: /downloads.html "Download the Spiceworks Desktop: Development Version"
 [Card Examples]: //github.com/spiceworks/spiceworks-js-sdk/tree/master/examples "Spiceworks Cloud App Examples"
