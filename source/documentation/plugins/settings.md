@@ -1,7 +1,7 @@
 ### Creating Configurable Plugins
 Most plugins you'll want to make (or use) are going to have configurable options for the admin to set. Whether it's color schemes in a theme plugin, or display messages in a user portal plugin, these configurable options will make it easier to maintain than having to go into the code every time.
 
-* Create a new plugin [as before](/docs/in-spiceworks/creating-your-first-plugin-tutorial).
+* Create a new plugin [as before](/documentation/plugins/your-first-plugin.html).
 * Enter the following text in the box and click "Save" in the toolbar:
 
 ~~~ javascript
