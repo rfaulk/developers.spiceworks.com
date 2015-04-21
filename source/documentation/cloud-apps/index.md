@@ -90,7 +90,7 @@ dictate what is displayed, you'll need to indicate that here. Our example
 application is going to use the Inventory service. Click the toggle to choose
 this permission.
 
-5) Click **Save** to publish the app to the App Center.
+5) Click **Save** to make your app available in your Spiceworks Developer Edition install.
 
 ## Add javascript to your application to get data from Spiceworks
 Now that you have registered your application, you can add some Javascript to
