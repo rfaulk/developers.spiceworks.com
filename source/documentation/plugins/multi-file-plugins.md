@@ -1,7 +1,7 @@
 ### Using Multiple files within a plugin
 There are advantages to separating things into multiple files.  When it comes to writing code, one big thing is not necessarily better than a collection of things that can comprise the whole.  In any case you can read the section referenced above to see the advantages of splitting things into multiple files.  Or, if you’re just going to trust me to tell you it is a good thing, let’s move on to the tutorial to learn how you can accomplish this.
 
-* First, create a new plugin [as before](/docs/in-spiceworks/creating-your-first-plugin-tutorial).
+* First, create a new plugin [as before](/documentation/plugins/your-first-plugin.html).
 * Edit the plugin to get in there and add the multiple files.
 We'll break this tutorial up differently than we have to make it easier to follow and explain what's happening as we go.
 
