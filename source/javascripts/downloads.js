@@ -3,6 +3,9 @@
 
   developers.downloads = {
     onLogin: function () {
+      if (typeof this.downloadUrl !== 'undefined') {
+        window.location.href = this.downloadUrl;
+      }
     },
 
     init: function () {
@@ -10,6 +13,7 @@
       var that = this;
       $('.download-dev-edition-button').on('click', function (e) {
         e.preventDefault();
+        that.downloadUrl = this.href;
         login.request('login').then(that.onLogin.bind(that));
       });
     }
