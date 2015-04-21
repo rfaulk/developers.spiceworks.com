@@ -1,7 +1,7 @@
 ### Adding A Message To Spiceworks With Plugins
-In this tutorial, you’re going to learn how to put a message at the top of the Spiceworks application page, so that you have a way to inform your fellow admins of something important without using those annoying alert popups we covered in the [Hello World tutorial](/docs/in-spiceworks/creating-your-first-plugin-tutorial).
+In this tutorial, you’re going to learn how to put a message at the top of the Spiceworks application page, so that you have a way to inform your fellow admins of something important without using those annoying alert popups we covered in the [Hello World tutorial](/documentation/plugins/your-first-plugin.html).
 
-* Create a new plugin [as before](/docs/in-spiceworks/creating-your-first-plugin-tutorial)
+* Create a new plugin [as before](/documentation/plugins/your-first-plugin.html)
 * Insert the following code
 
 ~~~ javascript
