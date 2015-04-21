@@ -1,7 +1,7 @@
 ### Have Plugins Cause Spiceworks To Respond To Events Within The Application
 There are plenty of times you would want actions only to occur when certain events happen. This tutorial will show you the basics of how to use the Spiceworks APIs to achieve this.
 
-* Create a new plugin [as before](/docs/in-spiceworks/creating-your-first-plugin-tutorial)
+* Create a new plugin [as before](/documentation/plugins/your-first-plugin.html)
 * Add the following code:
 
 ~~~ javascript
@@ -16,7 +16,7 @@ There are plenty of times you would want actions only to occur when certain even
 ### What's going on here?
 In this example, we're showing you how to respond to an event in Spiceworks.  In this case, the event is that the user portal is "ready", that is to say, it is done loading and ready for whatever action you want to take.
 
-Events like this one exist throughout the app.  For a full list of events, check out the [Spiceworks plugin API](/docs/in-spiceworks/plugin-api-overview-reference).
+Events like this one exist throughout the app.  For a full list of events, check out the [Spiceworks plugin API](/documentation/plugins/reference/).
 
 Some actions, like adding a widget type or navigation item, will be automatically scoped to the appropriate areas of the product.  But sometimes, a plugin author will need to really dig into some particular area of the product in order to add a feature.  Responding to events will allow them to do this.
 
