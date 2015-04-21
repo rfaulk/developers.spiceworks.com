@@ -1,7 +1,7 @@
 ### Adding Navigational Elements
 This plugin tutorial will show you how to create a separate page of information within Spiceworks. This page will be accessible through the My Tools section of the Inventory drop-down menu.
 
-* Create a new plugin [as before](/docs/in-spiceworks/creating-your-first-plugin-tutorial)
+* Create a new plugin [as before](/documentation/plugins/your-first-plugin.html)
 * Roll over the "Insert Code" button in the toolbar and select "Navigation Item".  The following code should be entered for you:
 
 ~~~ javascript

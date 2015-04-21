@@ -1,5 +1,5 @@
 do($ = jQuery) ->
-  developers['how-it-works'] =
+  developers.support =
     faq:
       init: ->
         $('.faq').children('li').click ->

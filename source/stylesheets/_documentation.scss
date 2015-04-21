@@ -120,4 +120,17 @@ body.documentation_index {
     margin-top: -47px;
     padding-top: 67px;
   }
+
+  ol, dl, ul, table, pre, blockquote {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    padding-left: 2em;
+    margin-bottom: 16px;
+
+    li {
+      list-style-type: disc;
+    }
+  }
 }

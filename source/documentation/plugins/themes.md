@@ -3,7 +3,7 @@ You can also use plugins to change the aesthetic appeal of Spiceworks. We just w
 
 ### Changing The Background To An Image
 
-* Create a new plugin as before (see [Hello World Alert Plugin](/docs/in-spiceworks/creating-your-first-plugin-tutorial)).
+* Create a new plugin as before (see [Hello World Alert Plugin](/documentation/plugins/your-first-plugin.html)).
 * Enter the following text in the box and click "Save" in the toolbar:
 
 ~~~ javascript
@@ -17,4 +17,4 @@ You can also use plugins to change the aesthetic appeal of Spiceworks. We just w
 This code is setting the style of the document body to be a Spiceworks logo.  Any element on the page can be updated in this way.  With styles, you can affect things like background colors, fonts and borders.  That's really just the start, and this is a technique that will come in quite handy over time.
 
 
-Next: [Hello World Widget Tutorial](/docs/in-spiceworks/widget-plugin-guide)
+Next: [Hello World Widget Tutorial](/documentation/plugins/building-widgets.html)

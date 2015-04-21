@@ -28,8 +28,11 @@ body.index {
       margin-bottom: 16px;
 
       .btn {
-        width: 226px;
-        margin-right: 30px;
+        width: 254px;
+
+        + .btn {
+          margin-left: 30px;
+        }
       }
     }
   }

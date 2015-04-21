@@ -1,7 +1,7 @@
 ### Creating New Dashboard Widgets
 This tutorial will show you how to use plugins to add new widgets types to your Spiceworks Dashboard
 
-* Create a new plugin and access the editor [as before](/docs/in-spiceworks/creating-your-first-plugin-tutorial)
+* Create a new plugin and access the editor [as before](/documentation/plugins/your-first-plugin.html)
 * Roll over the "Insert Code" button in the toolbar and select "Widget Type".  The following code should be entered for you. Make a few changes to have it look like this:
 
 ~~~ javascript
@@ -45,4 +45,4 @@ Optionally, you can also include:
 * icon - URL to the icon which will be used in the top left of the widget and in the "Add Content" popup.  It should be 16px x 16px.  Spiceworks will not resize the image to fit.
 
 
-Next: [Hello World Navigation Plugin Tutorial](/docs/in-spiceworks/navigation-plugin-guide)
+Next: [Hello World Navigation Plugin Tutorial](/documentation/plugins/adding-navigation.html)

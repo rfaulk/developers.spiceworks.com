@@ -100,7 +100,7 @@ helpers do
 
     guide_list.guides.each do |guide|
       current = (current_guide && (guide.url == current_guide.url))
-      middleman_url = "#{guide_list.root}/#{guide.url}.html"
+      middleman_url = guide.url.start_with?('//') ? guide.url : "#{guide_list.root}/#{guide.url}.html"
 
       buffer << "<hr />" if guide.new_section
       buffer << "<li class='#{'active' if current}'>"
@@ -109,8 +109,13 @@ helpers do
         if guide.sections
           buffer << "<nav class='submenu'><ul class='nav'>"
           guide.sections.each do |section|
-            url = section.url ? "#{guide_list.root}/#{section.url}.html" :
-              "##{section.title.parameterize}"
+            url = section.url
+            if url.nil?
+              url = "##{section.title.parameterize}"
+            elsif !url.start_with?('//', '#')
+              url = "#{guide_list.root}/#{section.url}.html"
+            end
+
             current = (url == "/#{current_page.path}")
             buffer << "<li class='#{'active' if current}'>"
             buffer << link_to(section.title, url)

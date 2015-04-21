@@ -1,21 +1,17 @@
 title: 'Build Cloud Apps'
 root: '/documentation/cloud-apps'
 guides:
-  - title: 'Cloud App Overview'
+  - title: 'Getting Started'
     url: 'index'
     sections:
-      - title: 'What is a Cloud App?'
-      - title: 'App Cards'
-      - title: 'Full Page Cards'
-      - title: 'Next Steps'
-
-  - title: 'Getting Started'
-    url: 'getting-started'
-    sections:
       - title: 'Installing Spiceworks'
-      - title: 'Adding Content'
-      - title: "What's Happening?"
-      - title: 'Using Javascript'
+      - title: 'Create a Place for Your App'
+        url: '#create-a-place-for-your-app-to-live'
+      - title: 'Register Your App with Spiceworks'
+        url: '#create-&-register-your-web-app-with-spiceworks'
+      - title: 'Spiceworks JS API Client'
+        url: '#add-javascript-to-your-application-to-get-data-from-spiceworks'
+      - title: 'Resources'
 
   - title: 'API Basics'
     url: 'api-basics'
@@ -29,7 +25,7 @@ guides:
 
   - new_section: true
     title: 'Examples'
-    url: 'examples/index'
+    url: '//github.com/spiceworks/spiceworks-js-sdk/tree/master/examples'
 
   - title: 'API Reference'
     url: 'reference/environment'

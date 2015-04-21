@@ -18,7 +18,7 @@ To return data about the tickets in the system you can make the following calls:
 	SPICEWORKS.data.Ticket.find('all', {filter:'open', page_size:50, page:3});
 ~~~
 
-Unfortunately there is currently not a way to get the total count, but this is under development. See here for a workaround to gather ticket counts: <http://community.spiceworks.com/topic/73154>.
+Unfortunately there is currently not a way to get the total count, but this is under development. [See here](http://community.spiceworks.com/topic/73154) for a workaround to gather ticket counts.
 
 * **Open Tickets:** `SPICEWORKS.data.Ticket.find( 'all', {filter:'open'});`
 * **Closed Tickets:** `SPICEWORKS.data.Ticket.find( 'all', {filter:'closed'});`

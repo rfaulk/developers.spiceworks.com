@@ -1,7 +1,7 @@
 ### Using Plugins To Run Reports
 This tutorial will show you how to have Spiceworks run a report and display the data using a plugin. In this case, we'll just be creating a page in the My Tools section of Spiceworks that will always display a certain report.
 
-* Create a new plugin [as before](/docs/in-spiceworks/creating-your-first-plugin-tutorial).
+* Create a new plugin [as before](/documentation/plugins/your-first-plugin.html).
 * There is a code snippit for running a report and processing its results, but for now, just copy the following code into your plugin.  This example builds a navigation item that runs a report when clicked.
 
 ~~~ javascript

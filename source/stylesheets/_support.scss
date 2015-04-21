@@ -1,19 +1,4 @@
 body.support {
-  section.intro {
-    padding-top: 24px;
-    padding-bottom: 0;
-    border: none;
-
-    .sui-fluid-container {
-      padding-bottom: 0
-    }
-  }
-
-  h1 {
-    text-align: left;
-    margin-bottom: 0;
-    padding-bottom: 1em;
-  }
 
   .columns-wrapper {
     @include clearfix;
@@ -42,7 +27,7 @@ body.support {
   }
 }
 
-body.how-it-works_faq {
+body.support_faq {
   section.faq {
     ul li {
       margin-bottom: .6em;
@@ -65,7 +50,7 @@ body.how-it-works_faq {
       p {
         display: none;
         margin-top: 0;
-        margin-bottom: 2rem;
+        margn-bottom: 2rem;
         font-size: .9em;
         cursor: default;
       }
@@ -74,6 +59,36 @@ body.how-it-works_faq {
         h4:before{content: '▼';}
         p{display: block;}
       }
+    }
+  }
+}
+
+.contact-support {
+  .mktoGutter, .mktoOffset {
+    display: none;
+  }
+
+  .mktoForm {
+    width: 100%;
+
+    .mktoRequiredField .mktoAsterix {
+      display: none;
+    }
+
+    .mktoFieldWrap, .mktoFormCol {
+      width: 100%;
+    }
+
+    .mktoField {
+      width: 100% !important;
+      height: 34px;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .mktoButtonWrap {
+      margin-left: 0 !important;
     }
   }
 }

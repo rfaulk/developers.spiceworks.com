@@ -1,10 +1,16 @@
+---
+full_width: true
+---
+
 <section class="hero">
   <div class="sui-fluid-container">
-    <h1>Build on a Platform for 6 million IT pros.</h1>
+    <h1>Build the next breakthrough in IT.</h1>
     <h2>Integrate your app with the world's largest IT platform.</h2>
     <div class="buttons-wrapper">
-      <a href="#" data-modal-name="join" data-target="#sign-up-modal" data-toggle="modal" class="btn btn-orange">Sign Up</a>
-      <a href="/documentation" class="btn btn-orange is-outlined">View Documentation</a>
+      <%= link_to 'Start Building Apps', '/documentation/cloud-apps/index.html',
+        class: 'btn btn-orange' %>
+      <%= link_to 'Get the Developer Tools', '/downloads.html',
+        class: 'btn btn-orange is-outlined' %>
     </div>
   </div>
 </section>
@@ -25,7 +31,7 @@
         <h2>Reach IT Pros</h2>
         <p>Distribute IT apps in the Spiceworks App Center for free</p>
         <p>Set your price (even if it is free)</p>
-        <p>Be a part of the tool IT Pros use everyday</p>
+        <p>Be a part of the tool IT pros use everyday</p>
       </figcaption>
     </figure>
     <figure>
@@ -42,7 +48,7 @@
   <div class="sui-fluid-container">
     <div class="copy-wrapper">
       <h2>The Spiceworks App Center</h2>
-      <p>The Spiceworks App Center is an open marketplace for you to distribute IT apps extending the Spiceworks Platform - for free or at the price you set. Reach Spiceworks downright massive audience of 6+ million IT pros seeking the best-of-the best IT apps.</p>
+      <p>What’s different about developing on the Spiceworks platform? Meet the Spiceworks App Center — an open marketplace for IT apps built on Spiceworks. The App Center gives you a place to distribute your IT apps  -- for free or at any price you set — that is shopped by millions of IT pros around the world who are looking for ways to simplify their IT day.</p>
       <span>
         <a href="http://community.spiceworks.com/appcenter">Learn More <span>»</span></a>
       </span>
@@ -55,7 +61,7 @@
 <section class="faq">
   <div class="sui-fluid-container">
     <p>
-      Still have questions? <% link_to 'how-it-works/faq.html' do %>
+      Still have questions? <% link_to '/support/faq.html' do %>
         Check out the FAQ <span class="arrows">»</span>
       <% end %>
     </p>

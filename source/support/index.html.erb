@@ -1,27 +1,39 @@
-<section class="intro">
-  <div class="sui-fluid-container">
-    <h1>Support</h1>
-    <hr class="divider-shadow">
+<div class="with-sidebar">
+  <div class="aside-wrapper">
+    <aside class="affix-top">
+      <nav class="sidebar">
+        <h4>Other Help Options</h4>
+        <ul class="nav" role="tablist">
+          <li><%= link_to 'FAQ »', '/support/faq.html' %></li>
+          <li><a href="//community.spiceworks.com/extending-spiceworks">Developers Forum »</a></li>
+          <li><a href="//community.spiceworks.com/blogs/developers/">Developers Blog »</a></li>
+          <li><%= link_to 'Branding Guidelines »', 'http://www.spiceworks.com/brand/#nav-apps' %></li>
+          <li><%= link_to 'Terms & Conditions »', '/terms-and-conditions.html' %></li>
+          <li><%= link_to 'SDK Agreement »', '/sdk-agreement.html' %></li>
+          <li><%= link_to 'Privacy Policy »', 'http://www.spiceworks.com/privacy/' %></li>
+          <li><a href="mailto:spiceworksappcenter@spiceworks.com">App Center Team »</a></li>
+        </ul>
+      </nav>
+    </aside>
   </div>
-</section>
-<section class="support-options">
-  <div class="sui-fluid-container columns-wrapper">
-    <div class="column">
-      <p>Questions on developing apps for <br>Spiceworks? We're here to help.</p>
-    </div>
-    <div class="column contact-support">
-      <h2>Contact Support</h2>
-      <%= partial 'form' %>
-    </div>
-    <div class="column other-options">
-      <h2>Other Help Options</h2>
-      <ul>
-        <li><%= link_to 'FAQ »', '/how-it-works/faq.html' %></li>
-        <li><a href="//community.spiceworks.com/extending-spiceworks">Developers Forum »</a></li>
-        <li><a href="//community.spiceworks.com/blogs/brand">Spiceworks Brand Guide »</a></li>
-        <li><a href="//community.spiceworks.com/blogs/developers/">Developers Blog »</a></li>
-        <li><a href="mailto:appcenter@spiceworks.com">App Center Team</a></li>
-      </ul>
-    </div>
-  </div>
-</section>
+
+  <main class="with-left-sidebar">
+    <section class="documentation-hero-header">
+      <%= image_tag 'spiceworks-o.png', alt: "Spiceworks Swoosh" %>
+      <h1>Support</h1>
+      <hr class="divider-shadow">
+    </section>
+    <section class="doc-content">
+      <section class="contact-support">
+        <p>Questions on developing apps for Spiceworks? We're here to help.</p>
+
+        <h4>Contact Support</h4>
+        <%#= partial 'form' %>
+        <script src="//app-abq.marketo.com/js/forms2/js/forms2.min.js"></script>
+        <form id="mktoForm_1322"></form>
+        <script>MktoForms2.loadForm("//app-abq.marketo.com", "989-NIR-811", 1322);</script>
+
+      </section>
+    </section>
+  </main>
+</div>
