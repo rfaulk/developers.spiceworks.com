@@ -1,3 +1,6 @@
+<% content_for :scripts do %>
+  <%= javascript_include_tag 'https://spiceworks.github.io/spiceworks-js-sdk/dist/spiceworks-sdk.js' %>
+<% end %>
 <main>
   <section class="intro">
     <h1>Spiceworks Developer Tools</h1>
@@ -18,8 +21,8 @@
         the Spiceworks Desktop that includes sample data and
         tools to help you build and test Apps.
       </p>
-      <%= link_to 'Check Back Soon', '#',
-        class: 'sui-bttn sui-bttn-primary download-box_button', disabled: true %>
+      <%= link_to 'Install Now', '#',
+        class: 'sui-bttn sui-bttn-primary download-dev-edition-button download-box_button' %>
     </div>
   </section>
 </main>
