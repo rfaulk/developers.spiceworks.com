@@ -61,20 +61,20 @@ button, .btn, input[type="submit"] {
 }
 
 .btn-orange {
-  border-color: fade-out($sw_orange , .5);
-  background-color: $sw_orange;
+  border-color: fade-out($sui-spiceworks-orange , .5);
+  background-color: $sui-spiceworks-orange;
   color: $sw_white;
 
   &:hover {
-    background-color: lighten($sw_orange, 10%);
+    background-color: lighten($sui-spiceworks-orange, 10%);
     color: $white;
   }
   &.is-outlined {
     background-color: transparent;
-    border-color: $sw_orange;
+    border-color: $sui-spiceworks-orange;
 
     &:hover {
-      background-color: $sw_orange;
+      background-color: $sui-spiceworks-orange;
     }
   }
 }
