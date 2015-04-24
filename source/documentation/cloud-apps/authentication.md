@@ -117,7 +117,7 @@ the combination of `environment.app_host.auid` and
 > **Note:** OAUTH2 is 101% predicated on __always using HTTPS/SSL__ when
 > transmitting access tokens. Never transmit an access token "in the clear".
 
-##### Using JavaScript and jQuery
+##### Example with jQuery AJAX
 
 ```js
 $.post('https://your-server/sign_in', {
@@ -127,7 +127,7 @@ $.post('https://your-server/sign_in', {
   });
 ```
 
-##### Using JavaScript and an HTML FORM
+##### Example with JavaScript and an HTML FORM
 
 ```html
 <form id="login-form" action="https://your-server/sign_in" method="post">
@@ -191,13 +191,13 @@ If the user is not authorized you will receive an `HTTP 403 Forbidden` result wi
 ```
 
 
-##### Testing with cURL
+##### Example with cURL
 
 ```bash
 $ curl -G -X GET -H "Accept: application/json" -d "access_token=814bd50cb926cfaebea353dd8b5f704def9e04b77372eed01f0d26f1d602e108" -d "app_secret=bfda03b8c726a62309fe624f0ba4228b6a2e0cd8c5c4d518ded4758e43ac21c3" -d "host_auid=92a450d9a3e596d7bef9ed9853b6a454" https://frontend.spiceworks.com/appcenter/api/app_user_authorization
 ```
 
-##### Ruby
+##### Example with Ruby
 
 ```ruby
 JSON.parse Net::HTTP.get(URI.parse('https://frontend.spiceworks.com/appcenter/api/app_user_authorization.json?' + {access_token: '814bd50cb926cfaebea353dd8b5f704def9e04b77372eed01f0d26f1d602e108', app_secret: 'bfda03b8c726a62309fe624f0ba4228b6a2e0cd8c5c4d518ded4758e43ac21c3', host_auid: '92a450d9a3e596d7bef9ed9853b6a454'}.to_query))
