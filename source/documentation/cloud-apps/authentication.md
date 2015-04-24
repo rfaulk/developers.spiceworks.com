@@ -19,7 +19,7 @@ app is authorized to do so.
 ### Prerequisite: Allow Spiceworks to embed your app
 
 Your cloud app built for Spiceworks is a web application that will be
-embedded within the Spiceworks application within of an IFRAME.
+embedded within the Spiceworks application within of an <iframe>.
 From within this container, your Javascript can leverage the Spiceworks SDK
 to obtain information from the hosting Spiceworks application.
 Because Spiceworks applications can be installed behind firewalls inside
@@ -28,8 +28,8 @@ of any corporate domain, you must not set the `X-Frame-Options` HTTP header.
 ### Step 1: Trust the Spiceworks application
 
 Not setting the `X-Frame-Options` header allows any Spiceworks application
-to embed your cloud app in an IFRAME. This also means that any web site
-anywhere can also embed your cloud app in an IFRAME. How can you distinguish
+to embed your cloud app in an <iframe>. This also means that any web site
+anywhere can also embed your cloud app in an <iframe>. How can you distinguish
 between valid Spiceworks applications and evil hacker empires? It starts with
 your Javascript!
 
@@ -46,7 +46,7 @@ card.services('environment').request('environment').then(
   });
 ```
 
-The Spiceworks SDK will communicate between the IFRAME containing your
+The Spiceworks SDK will communicate between the <iframe> containing your
 cloud app and the parent window of the Spiceworks application.
 Using its own cryptographic verification, the SDK will authenticate
 the hosting application. If all goes well, the Javascript promise is fulfilled
