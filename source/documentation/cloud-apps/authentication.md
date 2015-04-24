@@ -114,7 +114,8 @@ the combination of `environment.app_host.auid` and
 `environment.user.user_auid`, and the "password" is
 `environment.user.access_token`.
 
-**Note:** OAUTH2 is 101% predicated on __always using HTTPS/SSL__ when transmitting access tokens. Never transmit an access token "in the clear".
+> **Note:** OAUTH2 is 101% predicated on __always using HTTPS/SSL__ when
+> transmitting access tokens. Never transmit an access token "in the clear".
 
 ##### Using JavaScript and jQuery
 
@@ -161,7 +162,11 @@ Key|Value
 `host_auid`|The host identifier originally obtained from `environment.app_host.auid`
 `app_secret`|The OAUTH2 secret key generated for you when you first created your cloud app with Spiceworks
 
-**Note:** You are not sending the `user_auid`.
+> **Note:** Your OAUTH2 `app_secret` must be protected as confidentially as
+> possible! Never embed this value in a public code repository, do not log
+> this value in your log files, and never pass this value to any service besides
+> Spiceworks. __The only time you will ever use this value in production is to
+> authenticate your application's identity to Spiceworks, and only over HTTPS/SSL.__
 
 In response, you will receive an `HTTP 200 OK` result with authorization information:
 
