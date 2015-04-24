@@ -23,6 +23,20 @@ guides:
       - title: 'Events'
       - title: 'Error Handling'
 
+  - title: 'App Authentication'
+    url: 'authentication'
+    sections:
+      - title: 'Prerequisite'
+        url: '#prerequisite:-allow-spiceworks-to-embed-your-app'
+      - title: 'Step 1'
+        url: '#step-1:-trust-the-spiceworks-application'
+      - title: 'Step 2'
+        url: '#step-2:-obtain-an-oauth2-access-token'
+      - title: 'Step 3'
+        url: '#step-3:-use-the-oauth2-token-to-authenticate-the-user'
+      - title: 'Best practices'
+      - title: 'Further reading'
+
   - new_section: true
     title: 'Examples'
     url: '//github.com/spiceworks/spiceworks-js-sdk/tree/master/examples'
