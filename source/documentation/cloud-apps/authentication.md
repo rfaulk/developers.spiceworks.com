@@ -20,7 +20,7 @@ app is authorized to do so.
 
 Your cloud app built for Spiceworks is a web application that will be
 embedded within the Spiceworks application within of an <iframe>.
-From within this container, your Javascript can leverage the Spiceworks SDK
+From within this container, your JavaScript can leverage the Spiceworks SDK
 to obtain information from the hosting Spiceworks application.
 Because Spiceworks applications can be installed behind firewalls inside
 of any corporate domain, you must not set the `X-Frame-Options` HTTP header.
@@ -31,7 +31,7 @@ Not setting the `X-Frame-Options` header allows any Spiceworks application
 to embed your cloud app in an <iframe>. This also means that any web site
 anywhere can also embed your cloud app in an <iframe>. How can you distinguish
 between valid Spiceworks applications and evil hacker empires? It starts with
-your Javascript!
+your JavaScript!
 
 The first step to authenticating access to your cloud app is to request
 the application environment information using the Spiceworks SDK:
@@ -49,7 +49,7 @@ card.services('environment').request('environment').then(
 The Spiceworks SDK will communicate between the <iframe> containing your
 cloud app and the parent window of the Spiceworks application.
 Using its own cryptographic verification, the SDK will authenticate
-the hosting application. If all goes well, the Javascript promise is fulfilled
+the hosting application. If all goes well, the JavaScript promise is fulfilled
 and your first function is called with the `environment` object. If not,
 the promise is rejected and your second function is called with error
 information.
@@ -99,7 +99,7 @@ identified with a different pair of values to each of your two cloud apps.
 
 ### Step 3: Use the OAUTH2 token to authenticate the user
 
-At this point, your Javascript is free to use the Spiceworks SDK to do
+At this point, your JavaScript is free to use the Spiceworks SDK to do
 cool and amazing things inside the browser. However, at some point you're
 going to want the user to access some protected area of your cloud app,
 and that means leveraging the `environment` details to complete a login.
@@ -114,7 +114,7 @@ the combination of `environment.app_host.auid` and
 
 **Note:** OAUTH2 is 101% predicated on __always using HTTPS/SSL__ when transmitting access tokens. Never transmit an access token "in the clear".
 
-##### Using Javascript and jQuery
+##### Using JavaScript and jQuery
 
 ```js
 $.post('https://your-server/sign_in', {
@@ -124,7 +124,7 @@ $.post('https://your-server/sign_in', {
   });
 ```
 
-##### Using Javascript and an HTML FORM
+##### Using JavaScript and an HTML FORM
 
 ```html
 <form id="login-form" action="https://your-server/sign_in" method="post">
