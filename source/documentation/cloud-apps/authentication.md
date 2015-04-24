@@ -160,6 +160,7 @@ Key|Value
 ---|-----
 `access_token`|The access token originally obtained from `environment.user.access_token`
 `host_auid`|The host identifier originally obtained from `environment.app_host.auid`
+`user_auid`|The user identifier originally obtained from `environment.user.user_auid`
 `app_secret`|The OAUTH2 secret key generated for you when you first created your cloud app with Spiceworks
 
 > **Note:** Your OAUTH2 `app_secret` must be protected as confidentially as
@@ -180,8 +181,6 @@ In response, you will receive an `HTTP 200 OK` result with authorization informa
    }
 }
 ```
-
-Verify that these 3 values match your expectation.
 
 If the user is not authorized you will receive an `HTTP 403 Forbidden` result with error information:
 
