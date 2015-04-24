@@ -19,19 +19,21 @@ app is authorized to do so.
 ### Prerequisite: Allow Spiceworks to embed your app
 
 Your cloud app built for Spiceworks is a web application that will be
-embedded within the Spiceworks application within of an <iframe>.
-From within this container, your JavaScript can leverage the Spiceworks SDK
-to obtain information from the hosting Spiceworks application.
-Because Spiceworks applications can be installed behind firewalls inside
-of any corporate domain, you must not set the `X-Frame-Options` HTTP header.
+embedded within the Spiceworks Desktop application (a.k.a. the host
+application) within an &lt;iframe&gt;. From within this container, your
+JavaScript can leverage the Spiceworks SDK to obtain information from
+the Spiceworks host application about its environment.
+Because Spiceworks Desktop applications can be installed on any host
+URI within any corporate domain, you must not set the `X-Frame-Options`
+HTTP header.
 
-### Step 1: Trust the Spiceworks application
+### Step 1: Trust the Spiceworks host application
 
-Not setting the `X-Frame-Options` header allows any Spiceworks application
-to embed your cloud app in an <iframe>. This also means that any web site
-anywhere can also embed your cloud app in an <iframe>. How can you distinguish
-between valid Spiceworks applications and evil hacker empires? It starts with
-your JavaScript!
+Not setting the `X-Frame-Options` header allows any Spiceworks host application
+to embed your cloud app in an &lt;iframe&gt;. This also means that any web site
+anywhere can also embed your cloud app in an &lt;iframe&gt;. How can you distinguish
+between valid Spiceworks host applications and evil hacker empires? It starts
+with your JavaScript!
 
 The first step to authenticating access to your cloud app is to request
 the application environment information using the Spiceworks SDK:
@@ -46,8 +48,8 @@ card.services('environment').request('environment').then(
   });
 ```
 
-The Spiceworks SDK will communicate between the <iframe> containing your
-cloud app and the parent window of the Spiceworks application.
+The Spiceworks SDK will communicate between the &lt;iframe&gt; containing your
+cloud app and the parent window of the Spiceworks host application.
 Using its own cryptographic verification, the SDK will authenticate
 the hosting application. If all goes well, the JavaScript promise is fulfilled
 and your first function is called with the `environment` object. If not,
