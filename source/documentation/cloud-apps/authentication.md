@@ -39,6 +39,7 @@ The first step to authenticating access to your cloud app is to request
 the application environment information using the Spiceworks SDK:
 
 ```js
+var card = new SW.Card();
 card.services('environment').request('environment').then(
   function(environment){
     /* success! */
@@ -56,14 +57,12 @@ and your first function is called with the `environment` object. If not,
 the promise is rejected and your second function is called with error
 information.
 
-### Step 2: Obtain an OAUTH2 access token
+### Step 2: Obtain the current user identifier
 
-An OAUTH2 access token is like a temporary password granted to your cloud app
-on behalf of the Spiceworks user without the Spiceworks user having to
-give you his or her password directly.
-
-Lucky for you, requesting the environment information automatically
-grants you an OAUTH2 access token via the `environment` object:
+Identifying the currently logged in Spiceworks user in your canvas app
+requires your JavaScript to extract the user information via the Spiceworks SDK.
+Luckily, this information is already provided to your app via the
+`environment` object obtained in the previous step.
 
 ```json
 {
@@ -73,8 +72,10 @@ grants you an OAUTH2 access token via the `environment` object:
     },
   "user":
     {
+      "id": 159,
       "user_auid": "e34e59c92f43b49f9725a29f86632c12",
-      "access_token": "814bd50cb926cfaebea353dd8b5f704def9e04b77372eed01f0d26f1d602e108"
+      "first_name": "Jolly",
+      "last_name": "Fellow"
     }
 }
 ```
@@ -84,13 +85,15 @@ grants you an OAUTH2 access token via the `environment` object:
 #### Environment
 
 Using the `environment` object, you can now uniquely identify the hosting
-application and Spiceworks user of your cloud app.
+application and/or the Spiceworks user of your cloud app.
 
 Name|Type|Description
 ----|----|-----------
-`environment.app_host.auid`|`string`|Uniquely identifies the Spiceworks app into which your cloud app is installed
-`environment.user.user_auid`|`string`|Uniquely identifies the Spiceworks user accessing your cloud app
-`environment.user.access_token`|`string`|OAUTH2 access token
+`app_host.auid`|`string`|Uniquely identifies the Spiceworks app into which your cloud app is installed
+`user.user_auid`|`string`|Uniquely identifies the Spiceworks user accessing your cloud app
+`user.id`|`integer`|Identifies the Spiceworks user, but scoped only to this Spiceworks host application
+`user.first_name`|`string`|The user's first name
+`user.last_name`|`string`|The user's last name
 
 Both `auid` and `user_auid` are application-unique identifiers. This means they
 are unique to your cloud app alone. If the same real-life user installs your
@@ -99,23 +102,45 @@ a different `auid` but the same `user_auid`. Also, if you build more than one
 cloud app, the same real-life user from the same install of Spiceworks will be
 identified with a different pair of values to each of your two cloud apps.
 
-### Step 3: Use the OAUTH2 token to authenticate the user
+### Step 3: Obtain an OAUTH2 access token
+
+An OAUTH2 access token is like a temporary password granted to your cloud app
+on behalf of the Spiceworks user without the Spiceworks user having to
+give you his or her password directly.
+
+Using the `Login` object while inside of a Spiceworks host application will
+automatically grant you an OAUTH2 access token without forcing the user to
+reauthenticate with Spiceworks:
+
+```js
+var login = new SW.Login();
+login.request('login').then(
+  function(access_token){
+    /* success! */
+  },
+  function(errors){
+    /* oh no! */
+  });
+```
+
+> **Note:** Handle the `access_token` with care and never request access
+> tokens unnecessarily. OAUTH2 requires that you __always use HTTPS/SSL__ when
+> transmitting access tokens. Never transmit an access token "in the clear".
+
+### Step 4: Use the OAUTH2 token to authenticate the user
 
 At this point, your JavaScript is free to use the Spiceworks SDK to do
 cool and amazing things inside the browser. However, at some point you're
 going to want the user to access some protected area of your cloud app,
-and that means leveraging the `environment` details to complete a login.
+and that means using the details collected earlier to complete a login.
 
-#### Step 3a. Submit the login details to your server
+#### Step 4a. Submit the login details to your server
 
 A typical form-based login passes a username and password securely
 to the server where it is verified. In this case, the "username" is
 the combination of `environment.app_host.auid` and
-`environment.user.user_auid`, and the "password" is
-`environment.user.access_token`.
-
-> **Note:** OAUTH2 is 101% predicated on __always using HTTPS/SSL__ when
-> transmitting access tokens. Never transmit an access token "in the clear".
+`environment.user.user_auid`, and the "password" is the
+`access_token` provided by the `Login` object.
 
 ##### Example with jQuery AJAX
 
@@ -123,7 +148,7 @@ the combination of `environment.app_host.auid` and
 $.post('https://your-server/sign_in', {
     auid: environment.app_host.auid,
     user_auid: environment.user.user_auid,
-    access_token: environment.user.access_token
+    access_token: access_token
   });
 ```
 
@@ -139,11 +164,11 @@ $.post('https://your-server/sign_in', {
 ```js
 document.getElementById('login-auid').value = environment.app_host.auid;
 document.getElementById('login-user_auid').value = environment.user.user_auid;
-document.getElementById('login-access_token').value = environment.user.access_token;
+document.getElementById('login-access_token').value = access_token;
 document.getElementById('login-form').submit();
 ```
 
-#### Step 3b. Verify the OAUTH2 token with Spiceworks
+#### Step 4b. Verify the OAUTH2 token with Spiceworks
 
 Recall that an OAUTH2 access token is like a temporary password granted
 to your cloud app. Even if it were the real user's password, you would
@@ -151,16 +176,16 @@ need to "ask" Spiceworks whether the password was right before trusting the
 user. OAUTH2 is no different; your server needs to verify the authenticity
 of the access token with Spiceworks.
 
-Once the credentials have been passed to your server, submit them to
-Spiceworks for verification at
+Once the credentials have been passed to your server,
+**your server submits them to Spiceworks** for verification at
 https://frontend.spiceworks.com/appcenter/api/app_user_authorization
 by passing the following parameters:
 
 Key|Value
 ---|-----
-`access_token`|The access token originally obtained from `environment.user.access_token`
-`host_auid`|The host identifier originally obtained from `environment.app_host.auid`
-`user_auid`|The user identifier originally obtained from `environment.user.user_auid`
+`access_token`|The access token obtained from the `Login` object in step 2
+`host_auid`|The host identifier obtained from `environment.app_host.auid` in step 3
+`user_auid`|The user identifier obtained from `environment.user.user_auid` in step 3
 `app_secret`|The OAUTH2 secret key generated for you when you first created your cloud app with Spiceworks
 
 > **Note:** Your OAUTH2 `app_secret` must be protected as confidentially as
