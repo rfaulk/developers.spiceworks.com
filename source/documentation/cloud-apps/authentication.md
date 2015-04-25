@@ -257,7 +257,9 @@ the login session, at least for a reasonable period of time.
 Usually when developers talk about authentication, a conversation about
 authorization is not too far away. Within Spiceworks host applications,
 the options are effectively limited to combinations of the following
-two authorization schemes:
+two authorization schemes. How you decide to authorize users inside of
+your cloud app probably depends on whether you want users sharing
+information or not.
 
 ##### 1. Per-user
 
