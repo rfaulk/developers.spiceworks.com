@@ -183,9 +183,9 @@ by passing the following parameters:
 
 Key|Value
 ---|-----
-`access_token`|The access token obtained from the `Login` object in step 2
-`host_auid`|The host identifier obtained from `environment.app_host.auid` in step 3
-`user_auid`|The user identifier obtained from `environment.user.user_auid` in step 3
+`host_auid`|The host identifier obtained from `environment.app_host.auid` in step 2
+`user_auid`|The user identifier obtained from `environment.user.user_auid` in step 2
+`access_token`|The access token obtained from the `Login` object in step 3
 `app_secret`|The OAUTH2 secret key generated for you when you first created your cloud app with Spiceworks
 
 > **Note:** Your OAUTH2 `app_secret` must be protected as confidentially as
