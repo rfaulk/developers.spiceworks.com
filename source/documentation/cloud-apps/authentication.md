@@ -273,3 +273,7 @@ Another option is that every user within the same Spiceworks host application
 rights with the other users of the same Spiceworks host application.
 
 ### Further reading
+
+* [Spiceworks App API Basics](/documentation/cloud-apps/api-basics.html)
+* [Spiceworks Environment API Reference](/documentation/cloud-apps/reference/environment.html)
+* [OAuth 2.0](http://oauth.net/2/)
