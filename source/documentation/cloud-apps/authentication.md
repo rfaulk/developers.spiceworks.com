@@ -230,7 +230,38 @@ JSON.parse Net::HTTP.get(URI.parse('https://frontend.spiceworks.com/appcenter/ap
 
 ### Best practices
 
-* Creating cookie-based sessions
-* Spiceworks app authorization versus user authorizations
+#### Cookie-based sessions
+
+While it's technically possible to use the Spiceworks SDK on every web page of
+your canvas app to request an access token and validate it with Spiceworks,
+you probably wouldn't do that if every attempt forced the user to supply his
+password, right? No! You'd probably authenticate the user's password once, and
+then you'd probably use some sort of browser cookie-based mechanism for
+maintaining a "login session" with your web site.
+
+OAUTH2-based login systems should be no different.
+
+Once you have completed steps 1-4 above, you have established authenticity
+of the Spiceworks host application and of the current user logged into Spiceworks.
+At this point, please establish a trusted cookie with the browser to maintain
+the login session, at least for a reasonable period of time.
+
+#### Authorization
+
+Usually when developers talk about authentication, a conversation about
+authorization is not too far away. Within Spiceworks host applications,
+the options are effectively limited to combinations of the following
+two authorization schemes:
+
+##### 1. Per-user
+
+One option is that each user is authorized to create, update, delete, or
+otherwise interact with resources specific to him- or herself.
+
+##### 2. Per-Spiceworks host application
+
+Another option is that every user within the same Spiceworks host application
+(as identified by the `environment.app_host.host_auid` value) shares access
+rights with the other users of the same Spiceworks host application.
 
 ### Further reading
