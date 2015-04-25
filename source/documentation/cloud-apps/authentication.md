@@ -2,10 +2,10 @@
 
 Typical web sites and web applications identify and authenticate users
 by using email- or username-based logins with passwords, or they delegate
-part of this responsibility to an OAUTH2 provider like Facebook Login
+part of this responsibility to an OAuth2 provider like Facebook Login
 or Google+ Sign-In.
 
-While your cloud app is free to implement its own forms-based or OAUTH2
+While your cloud app is free to implement its own forms-based or OAuth2
 registration and login system, this doc will cover how to use the
 Spiceworks SDK to authenticate users and altogether avoid login forms
 and login buttons.
@@ -102,14 +102,14 @@ a different `auid` but the same `user_auid`. Also, if you build more than one
 cloud app, the same real-life user from the same install of Spiceworks will be
 identified with a different pair of values to each of your two cloud apps.
 
-### Step 3: Obtain an OAUTH2 access token
+### Step 3: Obtain an OAuth2 access token
 
-An OAUTH2 access token is like a temporary password granted to your cloud app
+An OAuth2 access token is like a temporary password granted to your cloud app
 on behalf of the Spiceworks user without the Spiceworks user having to
 give you his or her password directly.
 
 Using the `Login` object while inside of a Spiceworks host application will
-automatically grant you an OAUTH2 access token without forcing the user to
+automatically grant you an OAuth2 access token without forcing the user to
 reauthenticate with Spiceworks:
 
 ```js
@@ -127,13 +127,13 @@ login.request('login').then(
 
 Parameter|Type|Description
 ---------|----|-----------
-`appId`|`string`|The OAUTH2 application identifier generated for you when you first created your cloud app with Spiceworks
+`appId`|`string`|The OAuth2 application identifier generated for you when you first created your cloud app with Spiceworks
 
 > **Note:** Handle the returned `access_token` with care and never request access
-> tokens unnecessarily. OAUTH2 requires that you __always use HTTPS/SSL__ when
+> tokens unnecessarily. OAuth2 requires that you __always use HTTPS/SSL__ when
 > transmitting access tokens. Never transmit an access token "in the clear".
 
-### Step 4: Use the OAUTH2 token to authenticate the user
+### Step 4: Use the OAuth2 token to authenticate the user
 
 At this point, your JavaScript is free to use the Spiceworks SDK to do
 cool and amazing things inside the browser. However, at some point you're
@@ -174,12 +174,12 @@ document.getElementById('login-access_token').value = access_token;
 document.getElementById('login-form').submit();
 ```
 
-#### Step 4b. Verify the OAUTH2 token with Spiceworks
+#### Step 4b. Verify the OAuth2 token with Spiceworks
 
-Recall that an OAUTH2 access token is like a temporary password granted
+Recall that an OAuth2 access token is like a temporary password granted
 to your cloud app. Even if it were the real user's password, you would
 need to "ask" Spiceworks whether the password was right before trusting the
-user. OAUTH2 is no different; your server needs to verify the authenticity
+user. OAuth2 is no different; your server needs to verify the authenticity
 of the access token with Spiceworks.
 
 Once the credentials have been passed to your server,
@@ -192,9 +192,9 @@ Key|Value
 `host_auid`|The host identifier obtained from `environment.app_host.auid` in step 2
 `user_auid`|The user identifier obtained from `environment.user.user_auid` in step 2
 `access_token`|The access token obtained from the `Login` object in step 3
-`app_secret`|The OAUTH2 secret key generated for you when you first created your cloud app with Spiceworks
+`app_secret`|The OAuth2 secret key generated for you when you first created your cloud app with Spiceworks
 
-> **Note:** Your OAUTH2 `app_secret` must be protected as confidentially as
+> **Note:** Your OAuth2 `app_secret` must be protected as confidentially as
 > possible! Never embed this value in a public code repository, do not log
 > this value in your log files, and never pass this value to any service besides
 > Spiceworks. __The only time you will ever use this value in production is to
@@ -245,7 +245,7 @@ password, right? No! You'd probably authenticate the user's password once, and
 then you'd probably use some sort of browser cookie-based mechanism for
 maintaining a "login session" with your web site.
 
-OAUTH2-based login systems should be no different.
+OAuth2-based login systems should be no different.
 
 Once you have completed steps 1-4 above, you have established authenticity
 of the Spiceworks host application and of the current user logged into Spiceworks.
