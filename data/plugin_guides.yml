@@ -67,7 +67,7 @@ guides:
       - title: 'Creating Configurable Plugins'
       - title: "What's going on here?"
 
-  - title: 'Mutli File Plugins'
+  - title: 'Multi File Plugins'
     url: 'multi-file-plugins'
     sections:
       - title: 'Using Multiple files within a plugin'
