@@ -10,7 +10,7 @@ registration and login system, this doc will cover how to use the
 Spiceworks SDK to authenticate users and altogether avoid login forms
 and login buttons.
 
-By following the steps in this guide, you cloud app will be able to
+By following the steps in this guide, your cloud app will be able to
 authenticate a login session for the Spiceworks user accessing your app.
 Further, if your cloud app costs money in the Spiceworks App Center,
 following the steps of this guide will ensure the user accessing your
