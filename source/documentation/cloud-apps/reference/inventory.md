@@ -30,7 +30,7 @@ Name | Type | Description
 `model`|`string`| Return devices with model name `model`.
 `manufacturer`|`string`| Return devices manufactured by `manufacturer`.
 `device_type`|`string`| Return only devices that match this `device_type`. Users can add custom types, but the default device types are: `Desktop`, `Laptop`, `Server`, `Fax`, `Firewall`, `Copier`, `Router`, `NetworkPrinter`, `Unknown`, `Switch`, `Hub`, `HttpDevice`, `VoipDevice`, `Wireless`, `SnmpDevice`, `NAS`, `Ilo`, `IloOA`, `Tablet`, and `Smartphone`.
-`search`|`object`| Search fields: `manufacturer`, `model`, `operating_system`, `software.name`, `software.display_name`, `software.vendor`.  See [Searching](/docs/CanvasAppApis.md#searching) documentation for more information.
+`search`|`object`| Search fields: `manufacturer`, `model`, `name`, `operating_system`, `software.name`, `software.display_name`, `software.vendor`.  See [Searching](/docs/CanvasAppApis.md#searching) documentation for more information.
 
 ##### Response
 ```json
