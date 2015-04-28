@@ -137,8 +137,10 @@ Parameter|Type|Description
 
 At this point, your JavaScript is free to use the Spiceworks SDK to do
 cool and amazing things inside the browser. However, at some point you're
-going to want the user to access some protected area of your cloud app,
-and that means using the details collected earlier to complete a login.
+going to want the user to access some protected area of your cloud app, or
+you're going to want to store some user or environment data in your server.
+To restrict access and protect data, you need to use the details
+collected earlier to complete a login to your cloud app.
 
 #### Step 4a. Submit the login details to your server
 
