@@ -33,34 +33,17 @@ the user to login.
 
 ### Step 1: Obtain the current user identifier
 
-The first step to authenticating access to your cloud app is to request
-the application environment information using the Spiceworks SDK:
+Identifying the current Spiceworks user in your canvas app requires
+JavaScript to extract the user information with the Spiceworks SDK.
+Do this using the `environment` service:
 
 ```js
 var card = new SW.Card();
 card.services('environment').request('environment').then(
   function(environment){
-    /* success! */
-  ),
-  function(errors){
-    /* danger! danger! */
-  });
+    /* details below */
+  ));
 ```
-
-The Spiceworks SDK will communicate between the &lt;iframe&gt; containing your
-cloud app and the parent window of the Spiceworks host application.
-Using its own cryptographic verification, the SDK will authenticate
-the hosting application. If all goes well, the JavaScript promise is fulfilled
-and your first function is called with the `environment` object. If not,
-the promise is rejected and your second function is called with error
-information.
-
-### Step 2: Obtain the current user identifier
-
-Identifying the currently logged in Spiceworks user in your canvas app
-requires your JavaScript to extract the user information via the Spiceworks SDK.
-Luckily, this information is already provided to your app via the
-`environment` object obtained in the previous step.
 
 ```json
 {
@@ -100,7 +83,7 @@ a different `auid` but the same `user_auid`. Also, if you build more than one
 cloud app, the same real-life user from the same install of Spiceworks will be
 identified with a different pair of values to each of your two cloud apps.
 
-### Step 3: Obtain an OAuth2 access token
+### Step 2: Obtain an OAuth2 access token
 
 An OAuth2 access token is like a temporary password granted to your cloud app
 on behalf of the Spiceworks user without the Spiceworks user having to
@@ -131,7 +114,7 @@ Parameter|Type|Description
 > tokens unnecessarily. OAuth2 requires that you __always use HTTPS/SSL__ when
 > transmitting access tokens. Never transmit an access token "in the clear".
 
-### Step 4: Use the OAuth2 token to authenticate the user
+### Step 3: Use the OAuth2 token to authenticate the user
 
 At this point, your JavaScript is free to use the Spiceworks SDK to do
 cool and amazing things inside the browser. However, at some point you're
@@ -140,7 +123,7 @@ you're going to want to store some user or environment data in your server.
 To restrict access and protect data, you need to use the details
 collected earlier to complete a login to your cloud app.
 
-#### Step 4a. Submit the login details to your server
+#### Step 3a. Submit the login details to your server
 
 A typical form-based login passes a username and password securely
 to the server where it is verified. In this case, the "username" is
@@ -174,7 +157,7 @@ document.getElementById('login-access_token').value = access_token;
 document.getElementById('login-form').submit();
 ```
 
-#### Step 4b. Verify the OAuth2 token with Spiceworks
+#### Step 3b. Verify the OAuth2 token with Spiceworks
 
 Recall that an OAuth2 access token is like a temporary password granted
 to your cloud app. Even if it were the real user's password, you would
@@ -189,9 +172,9 @@ by passing the following parameters:
 
 Key|Value
 ---|-----
-`host_auid`|The host identifier obtained from `environment.app_host.auid` in step 2
-`user_auid`|The user identifier obtained from `environment.user.user_auid` in step 2
-`access_token`|The access token obtained from the `Login` object in step 3
+`host_auid`|The host identifier obtained from `environment.app_host.auid` in step 1
+`user_auid`|The user identifier obtained from `environment.user.user_auid` in step 1
+`access_token`|The access token obtained from the `Login` object in step 2
 `app_secret`|The OAuth2 secret key generated for you when you first created your cloud app with Spiceworks
 
 > **Note:** Your OAuth2 `app_secret` must be protected as confidentially as
@@ -249,7 +232,7 @@ OAuth2-based login systems should be no different. True, the user isn't
 mentally "taxed" to repeatedly enter his or her password. However, there is
 "tax" in the cost of AJAX and server-side requests to issue and verify tokens.
 
-Once you have completed steps 1-4 above, you have established authenticity
+Once you have completed steps 1-3 above, you have established authenticity
 of the Spiceworks host application and of the current user logged into Spiceworks.
 At this point, please establish a trusted cookie with the browser to maintain
 the login session, at least for a reasonable period of time.
