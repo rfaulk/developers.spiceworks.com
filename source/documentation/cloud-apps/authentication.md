@@ -16,24 +16,22 @@ Further, if your cloud app costs money in the Spiceworks App Center,
 following the steps of this guide will ensure the user accessing your
 app is authorized to do so.
 
-### Prerequisite: Allow Spiceworks to embed your app
+### Background
 
 Your cloud app built for Spiceworks is a web application that will be
 embedded within the Spiceworks Desktop application (a.k.a. the host
 application) within an &lt;iframe&gt;. From within this container, your
 JavaScript can leverage the Spiceworks SDK to obtain information from
 the Spiceworks host application about its environment.
-Because Spiceworks Desktop applications can be installed on any host
-URI within any corporate domain, you must not set the `X-Frame-Options`
-HTTP header.
 
-### Step 1: Trust the Spiceworks host application
+The Spiceworks SDK will communicate between the &lt;iframe&gt; containing your
+cloud app and the parent window of the Spiceworks host application.
+Because the user has already authenticated to the Spiceworks host application,
+these APIs will rely on that trust so that you can establish an
+OAuth2-authenticated session to your canvas app while never prompting
+the user to login.
 
-Not setting the `X-Frame-Options` header allows any Spiceworks host application
-to embed your cloud app in an &lt;iframe&gt;. This also means that any web site
-anywhere can also embed your cloud app in an &lt;iframe&gt;. How can you distinguish
-between valid Spiceworks host applications and evil hacker empires? It starts
-with your JavaScript!
+### Step 1: Obtain the current user identifier
 
 The first step to authenticating access to your cloud app is to request
 the application environment information using the Spiceworks SDK:
