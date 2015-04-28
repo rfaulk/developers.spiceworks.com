@@ -247,7 +247,9 @@ password, right? No! You'd probably authenticate the user's password once, and
 then you'd probably use some sort of browser cookie-based mechanism for
 maintaining a "login session" with your web site.
 
-OAuth2-based login systems should be no different.
+OAuth2-based login systems should be no different. True, the user isn't
+mentally "taxed" to repeatedly enter his or her password. However, there is
+"tax" in the cost of AJAX and server-side requests to issue and verify tokens.
 
 Once you have completed steps 1-4 above, you have established authenticity
 of the Spiceworks host application and of the current user logged into Spiceworks.
