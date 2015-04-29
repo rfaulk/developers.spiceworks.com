@@ -84,8 +84,8 @@ item):
     "rating_count": null,
     "category": null
   },
-  "purchase_date"": "2015-03-12T17:00:00-05:00",
-  "purchase_price"": "39.99",
+  "purchase_date": "2015-03-12T17:00:00-05:00",
+  "purchase_price": "39.99",
   "manufacturer": "Hewlett-Packard",
   "model": "ProBook 650 G1",
   "memory": 17088729088,
@@ -404,8 +404,8 @@ Example response for a user-defined asset or an unknown device on the network:
     "rating_count": null,
     "category": null
   },
-  "purchase_date"": "2015-01-18T17:00:00-05:00",
-  "purchase_price"": "29.99",
+  "purchase_date": "2015-01-18T17:00:00-05:00",
+  "purchase_price": "29.99",
   "manufacturer": "Hewlett-Packard",
   "model": "Officejet 6310",
   "memory": 0,
@@ -592,8 +592,8 @@ item):
         "rating_count": null,
         "category": null
       },
-      "purchase_date"": "2014-05-02T17:00:00-05:00",
-      "purchase_price"": "59.99",
+      "purchase_date": "2014-05-02T17:00:00-05:00",
+      "purchase_price": "59.99",
       "version": "9.20.00.0",
       "install_date": "2011-09-15",
       "install_location": null,
