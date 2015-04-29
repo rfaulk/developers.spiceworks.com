@@ -332,6 +332,8 @@ item):
   "updated_at": "2015-02-05T14:52:38-06:00",
   "scan_state": "inventoried",
   "install_date": null,
+  "purchase_date": "2015-02-03T17:00:00-03:00",
+  "purchase_price": "79.99",
   "last_backup_time": null,
   "last_boot_up_time": "2014-04-15T22:04:44-05:00",
   "last_qrcode_time": null,
