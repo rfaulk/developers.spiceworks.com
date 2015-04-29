@@ -19,7 +19,7 @@ Name | Type | Description
 `id` | `array` | Returns tickets whose id is contained within the array of ids.
 `assignee`|`integer` or `string`| Return tickets that are assigned to this user.  Can be either a user `id` or the string `none` for unassigned tickets.
 `author`|`integer`| Return tickets authored by this user. Must be the user `id`.
-`closed_at`|`object`| Return tickets closed within the given range. See [(datetime range)] (/docs/CanvasAppApis.md#date-time-filtering) documentation for more information.
+`closed_at`|`object`| Return tickets closed within the given range. See [(datetime range)] (developers.spiceworks.com//documentation/cloud-apps/api-basics.html#date-time-filtering) documentation for more information.
 `created_at`|`object`| Return tickets created within the given range. See [(datetime range)] (/docs/CanvasAppApis.md#date-time-filtering) documentation for more information.
 `due_at`|`object`| Return tickets whose due date is within the given range. See [(datetime range)] (/docs/CanvasAppApis.md#date-time-filtering) documentation for more information.
 `page`|`integer`| The page offset.  Must be between `1` and `page_count`.  Default: `1`
