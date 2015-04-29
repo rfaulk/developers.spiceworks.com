@@ -244,7 +244,7 @@ Name | Type | Description
 
 ##### Response
 
-This request will return the created ticket JSON, see the [single ticket response](#response-1).
+This request will return the created ticket, see the [single ticket response JSON](#response-1).
 
 #### Update a ticket
 
@@ -276,7 +276,7 @@ Name | Type | Description
 
 ##### Response
 
-This request will return the updated ticket JSON, see the [single ticket response](#response-1).
+This request will return the updated ticket, see the [single ticket response JSON](#response-1).
 
 #### Create a comment
 
@@ -302,8 +302,8 @@ Name | Type | Description
 
 ##### Response
 
-This request will return the same comment JSON as the `comments` array in the
-[ticket response](#response-1).  Example comment JSON:
+This request will return a comment object like those in the `comments` array in the
+[ticket response JSON](#response-1).  Example comment response:
 
 ```json
 {
