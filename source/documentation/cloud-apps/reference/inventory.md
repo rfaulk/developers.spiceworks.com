@@ -21,16 +21,16 @@ Name | Type | Description
 -----|------|--------------
 `id` | `array` | Returns devices whose id is contained within the array of ids.
 `scan_state`|`string`| Return devices that were in this state during the last scan. Can be either `'inventoried'`,  `'manual'`, or `'unknown'`.
-`owner`|`integer`| id corresponding to the owner of the device or asset. See [People](/developers.spiceworks.com//documentation/cloud-apps/reference/people.html#people-service) documentation for more information.
-`offline_at`|`object`([datetime range](/developers.spiceworks.com/documentation/cloud-apps/api-basics.html#date-time-filtering))| Return devices that were last noticed offline within the given [datetime range](/developers.spiceworks.com/documentation/cloud-apps/api-basics.html#date-time-filtering).
-`online_at`|`object`([datetime range](/developers.spiceworks.com/documentation/cloud-apps/api-basics.html#date-time-filtering))| Return devices that were last noticed online within the given [datetime range](/developers.spiceworks.com/documentation/cloud-apps/api-basics.html#date-time-filtering).
+`owner`|`integer`| id corresponding to the owner of the device or asset. See [People](/documentation/cloud-apps/reference/people.html#people-service) documentation for more information.
+`offline_at`|`object`([datetime range](/documentation/cloud-apps/api-basics.html#date-time-filtering))| Return devices that were last noticed offline within the given [datetime range](/documentation/cloud-apps/api-basics.html#date-time-filtering).
+`online_at`|`object`([datetime range](/documentation/cloud-apps/api-basics.html#date-time-filtering))| Return devices that were last noticed online within the given [datetime range](/documentation/cloud-apps/api-basics.html#date-time-filtering).
 `online`|`boolean`| Return only devices that are online if `true` or offline if `false`.
-`last_scanned_at`|`object`([datetime range](/developers.spiceworks.com/documentation/cloud-apps/api-basics.html#date-time-filtering))| Return devices that were last scanned within the given [datetime range](/developers.spiceworks.com/documentation/cloud-apps/api-basics.html#date-time-filtering).
+`last_scanned_at`|`object`([datetime range](/documentation/cloud-apps/api-basics.html#date-time-filtering))| Return devices that were last scanned within the given [datetime range](/documentation/cloud-apps/api-basics.html#date-time-filtering).
 `operating_system`|`string`| Return devices running the operating system `operating_system`.
 `model`|`string`| Return devices with model name `model`.
 `manufacturer`|`string`| Return devices manufactured by `manufacturer`.
 `device_type`|`string`| Return only devices that match this `device_type`. Users can add custom types, but the default device types are: `Desktop`, `Laptop`, `Server`, `Fax`, `Firewall`, `Copier`, `Router`, `NetworkPrinter`, `Unknown`, `Switch`, `Hub`, `HttpDevice`, `VoipDevice`, `Wireless`, `SnmpDevice`, `NAS`, `Ilo`, `IloOA`, `Tablet`, and `Smartphone`.
-`search`|`object`| Search fields: `manufacturer`, `model`, `operating_system`, `software.name`, `software.display_name`, `software.vendor`.  See [Searching](/developers.spiceworks.com/documentation/cloud-apps/api-basics.html#searching) documentation for more information.
+`search`|`object`| Search fields: `manufacturer`, `model`, `operating_system`, `software.name`, `software.display_name`, `software.vendor`.  See [Searching](/documentation/cloud-apps/api-basics.html#searching) documentation for more information.
 
 ##### Response
 ```json
@@ -482,7 +482,7 @@ Name | Type | Description
 `manufacturer`|`string`|Manufacturer information.
 `model`|`string`|Model information.
 `primary_owner_name`|`string`| Primary owner of the device or asset
-`owner`|`integer`| id corresponding to the owner of the device or asset. See [People](/developers.spiceworks.com//documentation/cloud-apps/reference/people.html#people-service) documentation for more information.
+`owner`|`integer`| id corresponding to the owner of the device or asset. See [People](/documentation/cloud-apps/reference/people.html#people-service) documentation for more information.
 
 ##### Response
 
