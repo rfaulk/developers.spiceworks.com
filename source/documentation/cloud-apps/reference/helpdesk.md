@@ -332,6 +332,51 @@ This request will return the same comment JSON as the `comments` array in the
 }
 ```
 
+#### Add work
+
+Add work time to a ticket
+
+```js
+card.services('helpdesk').request('work:create', ticket_id, attributes)
+```
+
+##### Parameters
+
+Name | Type | Description
+-----|------|--------------
+`ticket_id`|`integer`| The `id` of the ticket where the work will be appended.
+`attributes`|`object`| See below for detailed requirements
+
+##### Attributes
+
+Name | Type | Description
+-----|------|--------------
+`minutes`|`integer`| Minutes of time to add.
+`duration`|`string`| Duration string, like  "1d 2h".
+
+##### Response
+
+This request will return a work object like those in the `work` array in the
+[ticket response JSON](#response-1).  Example work response:
+
+```json
+{
+  "id": 10,
+  "time_spent": 3600,
+  "rate": 50.0,
+  "labor": 50.0,
+  "user": {
+    "id": 159,
+    "first_name": "Michael",
+    "last_name": "Gerbush",
+    "role": "admin",
+    "department": "DEV",
+    "avatar_path": null,
+    "url": "http://localhost:9675/people/159"
+  }
+}
+```
+
 ### Events
 
 #### Show ticket
