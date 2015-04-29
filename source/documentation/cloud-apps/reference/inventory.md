@@ -481,8 +481,8 @@ Name | Type | Description
 `site`|`string`|The location of the device or asset in a multi-site Spiceworks installation. Must be a valid `site.name`.
 `manufacturer`|`string`|Manufacturer information.
 `model`|`string`|Model information.
-`purchase_price`|`Float`|Purchase price of the asset.
-`purchase_date`|`Date`|Date asset was purchased.
+`purchase_price`|`float`|Purchase price of the asset.
+`purchase_date`|`string`|Date asset was purchased, provided in ISO 8601 format: YYYY-MM-DDTHH:MM:SSZ.
 `primary_owner_name`|`string`| Primary owner of the device or asset
 `owner`|`integer`| id corresponding to the owner of the device or asset. See [People](/docs/apis/people.md#people-service) documentation for more information.
 
