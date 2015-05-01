@@ -511,6 +511,22 @@ This request accepts the same [attributes](#attributes) as creating a device, [s
 
 This request will return the updated device JSON, see the [single device response](#response-1).
 
+#### Delete a device
+
+```js
+card.services('inventory').request('device:destroy', id)
+```
+
+##### Parameters
+
+Name | Type | Description
+-----|------|--------------
+`id`|`integer`|The `id` of the device
+
+##### Response
+
+This request will return the deleted device JSON, see the [single device response](#response-1).
+
 ## Software
 
 ### Requests
