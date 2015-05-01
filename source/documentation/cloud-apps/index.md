@@ -182,6 +182,7 @@ along the way (or, "it's dangerous to go alone..." joke):
 * [Download the Spiceworks Desktop: Developer Edition][Download DE]
 * [Spiceworks Cloud App Examples][Card Examples]
 * [Spiceworks App API Basics](/documentation/cloud-apps/api-basics.html)
+* [Spiceworks App Authentication](/documentation/cloud-apps/authentication.html)
 * [Spiceworks Environment API Reference](/documentation/cloud-apps/reference/environment.html)
 * [Spiceworks Help Desk API Reference](/documentation/cloud-apps/reference/helpdesk.html)
 * [Spiceworks Inventory API Reference](/documentation/cloud-apps/reference/inventory.html)

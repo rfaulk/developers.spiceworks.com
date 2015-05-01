@@ -23,6 +23,19 @@ guides:
       - title: 'Events'
       - title: 'Error Handling'
 
+  - title: 'App Authentication'
+    url: 'authentication'
+    sections:
+      - title: 'Background'
+      - title: 'Step 1: The current user'
+        url: '#step-1:-obtain-the-current-user-identifier'
+      - title: 'Step 2: Get an access token'
+        url: '#step-2:-obtain-an-oauth2-access-token'
+      - title: 'Step 3: Verify the access token'
+        url: '#step-3:-use-the-oauth2-token-to-authenticate-the-user'
+      - title: 'Best practices'
+      - title: 'Further reading'
+
   - new_section: true
     title: 'Examples'
     url: '//github.com/spiceworks/spiceworks-js-sdk/tree/master/examples'
