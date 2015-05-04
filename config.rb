@@ -30,7 +30,7 @@ page "/documentation/plugins/*", layout: :plugins
 page "/documentation/cloud-apps/*", layout: :cloud_apps
 page "/documentation/reports/*", layout: :reports
 
-redirect "tax-docs.html", to: "support/faq#how-do-i-get-paid"
+redirect "tax-docs/index.html", to: "../support/faq#how-do-i-get-paid"
 
 # Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
