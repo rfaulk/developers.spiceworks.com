@@ -30,6 +30,8 @@ page "/documentation/plugins/*", layout: :plugins
 page "/documentation/cloud-apps/*", layout: :cloud_apps
 page "/documentation/reports/*", layout: :reports
 
+redirect "tax-docs.html", to: "/support/faq.html#how-do-i-get-paid"
+
 # Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
@@ -44,6 +46,7 @@ page "/documentation/reports/*", layout: :reports
 # Make all links relative to support testing on
 # github.io/developers.spiceworks.com subdomain
 set :relative_links, true
+activate :directory_indexes
 
 # Add support for GFM
 set :markdown, tables: true,
