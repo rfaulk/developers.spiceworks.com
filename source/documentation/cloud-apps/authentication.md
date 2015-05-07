@@ -94,7 +94,7 @@ automatically grant you an OAuth2 access token without forcing the user to
 reauthenticate with Spiceworks:
 
 ```js
-var login = new SW.Login({appId: "your-oauth2-application-id"});
+var login = new SW.Login({appUid: "your-oauth2-application-id"});
 login.request('login').then(
   function(access_token){
     /* success! */
@@ -108,7 +108,7 @@ login.request('login').then(
 
 Parameter|Type|Description
 ---------|----|-----------
-`appId`|`string`|The OAuth2 application identifier generated for you when you first created your cloud app with Spiceworks
+`appUid`|`string`|The OAuth2 application identifier generated for you when you first created your cloud app with Spiceworks
 
 > **Note:** Handle the returned `access_token` with care and never request access
 > tokens unnecessarily. OAuth2 requires that you __always use HTTPS/SSL__ when
