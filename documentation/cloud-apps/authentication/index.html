@@ -189,7 +189,7 @@ give you his or her password directly.</p>
 <p>Using the <code>Login</code> object while inside of a Spiceworks host application will
 automatically grant you an OAuth2 access token without forcing the user to
 reauthenticate with Spiceworks:</p>
-<pre class="highlight javascript"><code><span class="kd">var</span> <span class="nx">login</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SW</span><span class="p">.</span><span class="nx">Login</span><span class="p">({</span><span class="na">appId</span><span class="p">:</span> <span class="s2">"your-oauth2-application-id"</span><span class="p">});</span>
+<pre class="highlight javascript"><code><span class="kd">var</span> <span class="nx">login</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SW</span><span class="p">.</span><span class="nx">Login</span><span class="p">({</span><span class="na">appUid</span><span class="p">:</span> <span class="s2">"your-oauth2-application-id"</span><span class="p">});</span>
 <span class="nx">login</span><span class="p">.</span><span class="nx">request</span><span class="p">(</span><span class="s1">'login'</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span>
   <span class="kd">function</span><span class="p">(</span><span class="nx">access_token</span><span class="p">){</span>
     <span class="cm">/* success! */</span>
@@ -209,7 +209,7 @@ reauthenticate with Spiceworks:</p>
 </tr>
 </thead><tbody>
 <tr>
-<td><code>appId</code></td>
+<td><code>appUid</code></td>
 <td><code>string</code></td>
 <td>The OAuth2 application identifier generated for you when you first created your cloud app with Spiceworks</td>
 </tr>
