@@ -8,7 +8,7 @@ The IT Pros in the community may already have written a report you need. Just vi
 * Be sure to 'spice up' the report by clicking on the chili pepper. This will help recognize the author for the contribution. You can also leave a personal comment by replying.
 
 
-![Report Example](http://community.spiceworks.com/wiki_attachments/report12.png){: style="float:right;"}
+![Report Example](http://community.spiceworks.com/wiki_attachments/report12.png)
 
 If you don't see the install button, you can also do the following:
 
