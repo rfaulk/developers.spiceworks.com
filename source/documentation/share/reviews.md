@@ -1,3 +1,5 @@
+## Ratings & Reviews
+
 As IT pros have known for years, Spiceworks is the place to go for IT product
 research.  We have over 236,150 customer reviews on over 41,420 products in 280
 different categories!  It's a wealth of information that can only be found on
@@ -9,6 +11,8 @@ for free!  All you need is one little code snippet to add a Spiceworks badge to
 your product site.  When a user clicks on the badge, a relevant product review
 pops up right there, with links to even more reviews of the product on
 Spiceworks.
+
+![Reviews Widget](documentation/reviews-widget.png)
 
 Spiceworks Ratings and Reviews Syndication puts you in the driver's seat.  You
 pick the products you want to feature, and you choose where these badges appear
