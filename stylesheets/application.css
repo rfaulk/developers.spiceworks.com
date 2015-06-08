@@ -2821,7 +2821,7 @@ i.icon-24.icon-warning {
   border-radius: 3px; }
 
 /* line 2018, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sui-2.4.0/app/assets/stylesheets/sui-core.scss */
-.well {
+.well, .follow-button-code-form, .login-button-form {
   position: relative;
   overflow: visible;
   min-height: 20px;
@@ -2837,25 +2837,25 @@ i.icon-24.icon-warning {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
 
 /* line 2032, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sui-2.4.0/app/assets/stylesheets/sui-core.scss */
-.well blockquote {
+.well blockquote, .follow-button-code-form blockquote, .login-button-form blockquote {
   border-color: #D3D3D3;
   border-color: rgba(0, 0, 0, 0.15); }
 
 /* line 2036, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sui-2.4.0/app/assets/stylesheets/sui-core.scss */
-.well.error {
+.well.error, .error.follow-button-code-form, .error.login-button-form {
   background-color: #FCE2DB;
   border: 1px solid #FDA099;
   font-weight: normal; }
 
 /* line 2041, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sui-2.4.0/app/assets/stylesheets/sui-core.scss */
-.well.with-arrow {
+.well.with-arrow, .with-arrow.follow-button-code-form, .with-arrow.login-button-form {
   margin-bottom: 14px;
   -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.05);
   -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.05);
   box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.05); }
 
 /* line 2047, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sui-2.4.0/app/assets/stylesheets/sui-core.scss */
-.well .arrow, .well .arrow:after {
+.well .arrow, .follow-button-code-form .arrow, .login-button-form .arrow, .well .arrow:after, .follow-button-code-form .arrow:after, .login-button-form .arrow:after {
   position: absolute;
   display: block;
   width: 0;
@@ -2864,7 +2864,7 @@ i.icon-24.icon-warning {
   border-style: solid; }
 
 /* line 2055, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sui-2.4.0/app/assets/stylesheets/sui-core.scss */
-.well .arrow {
+.well .arrow, .follow-button-code-form .arrow, .login-button-form .arrow {
   border-width: 11px;
   top: -11px;
   left: 15%;
@@ -2874,7 +2874,7 @@ i.icon-24.icon-warning {
   border-top-width: 0; }
 
 /* line 2064, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sui-2.4.0/app/assets/stylesheets/sui-core.scss */
-.well .arrow:after {
+.well .arrow:after, .follow-button-code-form .arrow:after, .login-button-form .arrow:after {
   border-width: 10px;
   content: "";
   top: 1px;
@@ -2883,11 +2883,11 @@ i.icon-24.icon-warning {
   border-top-width: 0; }
 
 /* line 2072, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sui-2.4.0/app/assets/stylesheets/sui-core.scss */
-.well.error .arrow:after {
+.well.error .arrow:after, .error.follow-button-code-form .arrow:after, .error.login-button-form .arrow:after {
   border-bottom-color: #FCE2DB; }
 
 /* line 2075, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sui-2.4.0/app/assets/stylesheets/sui-core.scss */
-.well.error .arrow {
+.well.error .arrow, .error.follow-button-code-form .arrow, .error.login-button-form .arrow {
   border-bottom-color: #FDA099; }
 
 /* line 2078, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/sui-2.4.0/app/assets/stylesheets/sui-core.scss */
@@ -14846,7 +14846,7 @@ a.list-group-item-danger {
   padding-bottom: 75%; }
 
 /* line 7, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_wells.scss */
-.well {
+.well, .follow-button-code-form, .login-button-form {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -14856,7 +14856,7 @@ a.list-group-item-danger {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
   /* line 15, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/_wells.scss */
-  .well blockquote {
+  .well blockquote, .follow-button-code-form blockquote, .login-button-form blockquote {
     border-color: #ddd;
     border-color: rgba(0, 0, 0, 0.15); }
 
@@ -15775,12 +15775,12 @@ button.close {
   /* line 18, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
-/*
+/*!
  * Ladda
  * http://lab.hakim.se/ladda
  * MIT licensed
  *
- * Copyright (C) 2013 Hakim El Hattab, http://hakim.se
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
  */
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button {
@@ -15794,7 +15794,7 @@ button.close {
   width: 32px;
   height: 32px;
   top: 50%;
-  margin-top: -16px;
+  margin-top: 0;
   opacity: 0;
   pointer-events: none; }
 
@@ -15842,11 +15842,11 @@ button.close {
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=expand-right] .ladda-spinner {
-  right: 14px; }
+  right: -6px; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=expand-right][data-size="s"] .ladda-spinner, .ladda-button[data-style=expand-right][data-size="xs"] .ladda-spinner {
-  right: 4px; }
+  right: -12px; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=expand-right][data-loading] {
@@ -15862,7 +15862,7 @@ button.close {
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=expand-left] .ladda-spinner {
-  left: 14px; }
+  left: 26px; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=expand-left][data-size="s"] .ladda-spinner, .ladda-button[data-style=expand-left][data-size="xs"] .ladda-spinner {
@@ -15888,7 +15888,7 @@ button.close {
 .ladda-button[data-style=expand-up] .ladda-spinner {
   top: -32px;
   left: 50%;
-  margin-left: -16px; }
+  margin-left: 0; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=expand-up][data-loading] {
@@ -15897,7 +15897,7 @@ button.close {
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=expand-up][data-loading] .ladda-spinner {
   opacity: 1;
-  top: 14px;
+  top: 26px;
   margin-top: 0; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
@@ -15916,7 +15916,7 @@ button.close {
 .ladda-button[data-style=expand-down] .ladda-spinner {
   top: 62px;
   left: 50%;
-  margin-left: -16px; }
+  margin-left: 0; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=expand-down][data-size="s"] .ladda-spinner, .ladda-button[data-style=expand-down][data-size="xs"] .ladda-spinner {
@@ -15945,7 +15945,7 @@ button.close {
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=slide-left] .ladda-spinner {
   left: 100%;
-  margin-left: -16px; }
+  margin-left: 0; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=slide-left][data-loading] .ladda-label {
@@ -15968,7 +15968,8 @@ button.close {
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=slide-right] .ladda-spinner {
   right: 100%;
-  margin-left: -16px; }
+  margin-left: 0;
+  left: 16px; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=slide-right][data-loading] .ladda-label {
@@ -15991,7 +15992,7 @@ button.close {
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=slide-up] .ladda-spinner {
   left: 50%;
-  margin-left: -16px;
+  margin-left: 0;
   margin-top: 1em; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
@@ -16002,7 +16003,7 @@ button.close {
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=slide-up][data-loading] .ladda-spinner {
   opacity: 1;
-  margin-top: -16px; }
+  margin-top: 0; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=slide-down] {
@@ -16015,7 +16016,7 @@ button.close {
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=slide-down] .ladda-spinner {
   left: 50%;
-  margin-left: -16px;
+  margin-left: 0;
   margin-top: -2em; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
@@ -16026,7 +16027,7 @@ button.close {
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=slide-down][data-loading] .ladda-spinner {
   opacity: 1;
-  margin-top: -16px; }
+  margin-top: 0; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=zoom-out] {
@@ -16035,7 +16036,7 @@ button.close {
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=zoom-out] .ladda-spinner {
   left: 50%;
-  margin-left: -16px;
+  margin-left: 32px;
   -webkit-transform: scale(2.5);
   -moz-transform: scale(2.5);
   -ms-transform: scale(2.5);
@@ -16059,6 +16060,7 @@ button.close {
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=zoom-out][data-loading] .ladda-spinner {
   opacity: 1;
+  margin-left: 0;
   -webkit-transform: none;
   -moz-transform: none;
   -ms-transform: none;
@@ -16096,6 +16098,7 @@ button.close {
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=zoom-in][data-loading] .ladda-spinner {
   opacity: 1;
+  margin-left: 0;
   -webkit-transform: none;
   -moz-transform: none;
   -ms-transform: none;
@@ -16110,7 +16113,7 @@ button.close {
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=contract] .ladda-spinner {
   left: 50%;
-  margin-left: -16px; }
+  margin-left: 0; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=contract][data-loading] {
@@ -16129,18 +16132,18 @@ button.close {
 .ladda-button[data-style=contract-overlay] {
   overflow: hidden;
   width: 100px;
-  box-shadow: 0px 0px 0px 3000px transparent; }
+  box-shadow: 0px 0px 0px 2000px transparent; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=contract-overlay] .ladda-spinner {
   left: 50%;
-  margin-left: -16px; }
+  margin-left: 0; }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=contract-overlay][data-loading] {
   border-radius: 50%;
   width: 52px;
-  box-shadow: 0px 0px 0px 3000px rgba(0, 0, 0, 0.8); }
+  box-shadow: 0px 0px 0px 2000px rgba(0, 0, 0, 0.8); }
 
 /* line 8, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/vendor/ladda-themeless.min.css */
 .ladda-button[data-style=contract-overlay][data-loading] .ladda-label {
@@ -16426,13 +16429,13 @@ button.close {
 .highlight {
   background-color: #f8f8f8; }
 
-/* line 80, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_constants.scss */
+/* line 74, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_constants.scss */
 .clearfix:after, footer .mid-section:after, footer .bottom-section:after, .content-wrapper:after, body.index section.app-center:after {
   content: "";
   display: table;
   clear: both; }
 
-/* line 86, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_constants.scss */
+/* line 80, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_constants.scss */
 .relative {
   position: relative; }
 
@@ -16616,88 +16619,89 @@ ul, ol {
 .divider-shadow {
   margin-left: -30px;
   margin-right: -30px;
+  margin-bottom: 0;
   padding-bottom: 20px;
   background-image: url("../images/hr-shadow.png");
   background-repeat: no-repeat;
   background-position: center;
   border-bottom: 0; }
 
-/* line 208, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 209, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .modal {
   width: 100%;
   background: transparent;
   border-color: transparent; }
 
-/* line 213, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 214, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .modal.fade.in {
   top: 50px; }
 
-/* line 217, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 218, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .modal-dialog {
   width: 340px; }
 
-/* line 220, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 221, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .modal-header {
   position: relative; }
 
-/* line 223, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 224, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .modal-header button.close, .modal-header button.close:hover {
   position: absolute;
   right: -3px;
   top: 0; }
 
-/* line 228, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 229, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .modal .form-messages .msg {
   display: none;
   text-align: left; }
-  /* line 232, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 233, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   .modal .form-messages .msg .signature {
     margin-bottom: 0; }
 
-/* line 237, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 238, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .mktoForm {
   width: 100%;
   margin-right: 0; }
 
-/* line 241, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 242, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .mktoForm .mktoRequiredField label.mktoLabel, .mktoForm .mktoLabel {
   width: 120px !important; }
 
-/* line 244, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 245, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .mktoForm .mktoRadioList > input, .mktoForm .mktoCheckboxList > input {
   width: auto !important; }
 
-/* line 247, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 248, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .mktoForm .mktoRadioList > label, .mktoForm .mktoCheckboxList > label {
   font-weight: normal;
   vertical-align: middle;
   margin-top: 0; }
 
-/* line 253, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 254, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .CodeRay .line-numbers {
   margin-right: 1em; }
 
-/* line 258, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 259, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .full-width {
   margin-top: 47px; }
 
-/* line 261, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 262, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .with-left-sidebar, aside {
   float: left;
   margin-bottom: 46px; }
 
-/* line 266, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 267, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .aside-wrapper {
   float: left;
   width: 292px;
   min-height: 1px; }
 
-/* line 272, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 273, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 aside > nav.sidebar {
   margin-right: 50px;
   width: 242px;
   border: 1px solid lightgray; }
-  /* line 277, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 278, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   aside > nav.sidebar h4 {
     background-color: #ededed;
     margin: 0;
@@ -16706,7 +16710,7 @@ aside > nav.sidebar {
     font-weight: 400;
     border-bottom: 1px solid lightgray;
     color: rgba(51, 51, 51, 0.5); }
-    /* line 286, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+    /* line 287, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
     aside > nav.sidebar h4:before {
       content: '';
       display: block;
@@ -16718,18 +16722,18 @@ aside > nav.sidebar {
       position: relative;
       left: -.4em;
       top: 8px; }
-  /* line 300, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 301, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   aside > nav.sidebar ul {
     margin: 17px 0; }
-  /* line 306, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 307, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   aside > nav.sidebar li.active > a {
     font-weight: 600; }
-  /* line 311, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 312, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   aside > nav.sidebar li.active > a, aside > nav.sidebar li:hover > a {
     border-color: #9d9d9d;
     text-decoration: none;
     color: inherit; }
-  /* line 318, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 319, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   aside > nav.sidebar li a {
     display: block;
     color: #333333;
@@ -16739,97 +16743,102 @@ aside > nav.sidebar {
     border-left: 3px solid transparent;
     padding: 0em .2em 0em 1em;
     margin: 10px 0; }
-    /* line 328, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+    /* line 329, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
     aside > nav.sidebar li a:hover {
       background-color: inherit; }
-  /* line 333, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 334, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   aside > nav.sidebar li .submenu {
     display: none; }
-    /* line 336, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+    /* line 337, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
     aside > nav.sidebar li .submenu .nav {
       margin: 0; }
-  /* line 341, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 342, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   aside > nav.sidebar li.active > .submenu {
     display: block;
     margin-top: -10px; }
-    /* line 345, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+    /* line 346, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
     aside > nav.sidebar li.active > .submenu li a {
       margin: 5px 0;
       padding-left: 30px;
       color: #999999;
       font-size: 11px; }
-      /* line 351, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+      /* line 352, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
       aside > nav.sidebar li.active > .submenu li a:hover {
         text-decoration: underline; }
 
-/* line 359, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 360, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 main.with-left-sidebar {
   width: -webkit-calc(100% - 242px - 50px);
   width: calc(100% - 242px - 50px);
   min-width: 850px; }
 
-/* line 364, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 365, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 300; }
 
-/* line 370, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 371, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 section .sui-fluid-container {
   padding: 3em 25px; }
 
-/* line 374, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 375, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .content-wrapper {
   margin-top: 47px; }
 
-/* line 379, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 380, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .sui-fluid-container {
   padding: 40px 25px; }
 
-/* line 383, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 384, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .with-sidebar.with-breadcrumbs {
   margin-top: -25px; }
-  /* line 386, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 387, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   .with-sidebar.with-breadcrumbs .breadcrumbs {
     margin-bottom: 25px; }
-  /* line 390, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 391, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   .with-sidebar.with-breadcrumbs .with-left-sidebar, .with-sidebar.with-breadcrumbs aside {
     margin-top: 0; }
 
-/* line 398, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 399, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .breadcrumbs li {
   display: inline-block;
   font-size: .9em; }
-  /* line 402, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 403, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   .breadcrumbs li:after {
     content: '❯';
     margin: 0 8px;
     font-size: .9em;
     opacity: .8; }
-  /* line 409, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 410, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   .breadcrumbs li:last-of-type:after {
     display: none; }
 
-/* line 415, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 416, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .affix {
   top: 72px; }
 
-/* line 419, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 420, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 .affix-bottom {
   position: absolute; }
 
-/* line 423, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+/* line 424, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
 section.intro {
   text-align: center; }
-  /* line 426, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 427, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   section.intro h1 {
     margin-top: 0;
     margin-bottom: 22px; }
-  /* line 430, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 431, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   section.intro h2 {
     font-size: 1.6em; }
-  /* line 434, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+  /* line 435, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
   section.intro .divider-shadow {
     margin-top: 32px; }
+
+/* line 440, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_shared.scss */
+.header-icon {
+  margin-right: 10px;
+  vertical-align: text-bottom; }
 
 /* line 1, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_launch_page.scss */
 body.index {
@@ -17040,6 +17049,51 @@ body.documentation_index {
   /* line 132, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
   .doc-content ul li {
     list-style-type: disc; }
+
+/* line 138, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
+.login-button-form-thank-you, .copy-success {
+  display: none; }
+
+/* line 142, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
+.copy-success {
+  vertical-align: text-top;
+  line-height: 24px; }
+
+/* line 147, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
+.login-button-form_header {
+  margin-top: 0; }
+
+/* line 151, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
+.follow-button-code-form, .login-button-form {
+  width: 50%; }
+
+/* line 156, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
+.highlighted {
+  background: #FFF3D9; }
+
+/* line 160, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
+.terms-of-use {
+  font-size: 11px; }
+
+/* line 164, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
+.code-input {
+  white-space: pre; }
+
+/* line 169, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
+.follow-button-code-form .terms-of-use {
+  margin-bottom: 0; }
+/* line 173, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
+.follow-button-code-form .follow-button-code, .follow-button-code-form .terms-of-use {
+  margin-top: 10px; }
+
+/* line 179, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
+.screenshot {
+  float: right; }
+
+/* line 184, /Users/michaelg/src/developers.spiceworks.com/source/stylesheets/_documentation.scss */
+.documentation_share_reviews img {
+  float: left;
+  margin: 5px 20px 5px 0; }
 
 /* line 14, /usr/local/var/rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
 body.support .columns-wrapper:before, body.support .columns-wrapper:after {
