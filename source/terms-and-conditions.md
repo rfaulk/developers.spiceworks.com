@@ -35,11 +35,11 @@ April 16, 2015
 
 ###4. Encourage proper use
   1. Respect the way Spiceworks looks and functions. Don't offer experiences that change it. 
-  2. Respect the limits we've placed on the <a href="developers.spiceworks.com/api-terms" target="_blank">Spiceworks API</a>. 
+  2. Respect the limits we've placed on the <a href="http://developers.spiceworks.com/documentation/cloud-apps/" target="_blank">Spiceworks API</a>. 
   3. Don’t build an app whose primary purpose is to redirect people off of Spiceworks. 
   4. If you want to use our logos or brand, follow the guidelines in the <a href="http://www.spiceworks.com/brand/" target="_blank">Spiceworks Brand Guidelines</a>.  Ad networks and data brokers must get our written permission before using our Platform, logos, or trademarks. 
   5. Don't sell, transfer or sublicense our code, APIs, or tools to anyone.
-  6. Only use our SDKs to develop and distribute apps for use with the Spiceworks Platform. You may also distribute any code libraries or sample source code included in the Spiceworks SDKs for inclusion in such apps.  Abide by our <a href="developers.spiceworks.com/sdk-agreement" target="_blank">SDK Agreement</a>. 
+  6. Only use our SDKs to develop and distribute apps for use with the Spiceworks Platform. You may also distribute any code libraries or sample source code included in the Spiceworks SDKs for inclusion in such apps.  Abide by our <a href="http://developers.spiceworks.com/sdk-agreement/" target="_blank">SDK Agreement</a>. 
   7. Don’t modify, translate, create derivative works of, or reverse engineer any Spiceworks SDK or its components.
   8. Be honest about your relationship with Spiceworks when talking to anyone. Comply with our <a href="http://www.spiceworks.com/brand/" target="_blank">Developer PR Guidelines</a> and get approval from us before issuing any formal press release or blog post mentioning Spiceworks. 
 
@@ -121,6 +121,6 @@ April 16, 2015
   3. Whatever the reason, if your app is no longer going to be a part of the Spiceworks App Center, then you must contact all users of your app, give them fair warning and describe how you will support them going forward.
   4. Section 5 and all other Spiceworks terms applicable to your use of the Spiceworks App Center that, by their nature, are intended to survive, will survive even if our relationship with you with respect to your app is terminated.  
 
-Your use of the Spiceworks App Center is subject to the terms and conditions below, as well as to the Spiceworks <a href="www.spiceworks.com/terms" target="_blank">Terms of Use</a>, which are incorporated into these terms and conditions.
+Your use of the Spiceworks App Center is subject to the terms and conditions below, as well as to the Spiceworks <a href="http://www.spiceworks.com/terms" target="_blank">Terms of Use</a>, which are incorporated into these terms and conditions.
 
 Spiceworks reserves the right, at its sole discretion, to change, modify, add or remove portions of these terms at any time.  You should visit this page periodically to review the most current terms, because you are bound by them if you use the Spiceworks App Center.  Your continued use of the Spiceworks App Center indicates your acceptance and agreement to the changes.  As long as you comply with these terms and the Spiceworks Terms of Use, Spiceworks grants you a personal, non-exclusive, non-transferable, limited privilege to use the Spiceworks App Center.  
