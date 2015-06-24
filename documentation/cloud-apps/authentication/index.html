@@ -73,7 +73,14 @@
         <hr class="divider-shadow">
       </section>
       <section class="doc-content">
-        <h1 id="authentication">Authentication</h1>
+        <blockquote>
+<p><strong>Note:</strong> Currently, if you want to allow seamless authentication to your App
+using the Spiceworks Login API described below, you must apply to receive an App
+UID and secret. <a href="http://www.surveygizmo.com/s3/2206835/Challenge-Post-Access-Token-Request">Apply here
+now</a>.</p>
+</blockquote>
+
+<h1 id="authentication">Authentication</h1>
 
 <p>Typical web sites and web applications identify and authenticate users
 by using email- or username-based logins with passwords, or they delegate
@@ -182,6 +189,12 @@ identified with a different pair of values to each of your two cloud apps.</p>
 
 <h3 id="step-2:-obtain-an-oauth2-access-token">Step 2: Obtain an OAuth2 access token</h3>
 
+<blockquote>
+<p><strong>Note:</strong> Currently, to use this API you must apply to receive an App UID
+(<code>appUid</code>) and secret. <a href="http://www.surveygizmo.com/s3/2206835/Challenge-Post-Access-Token-Request">Apply here
+now</a>.</p>
+</blockquote>
+
 <p>An OAuth2 access token is like a temporary password granted to your cloud app
 on behalf of the Spiceworks user without the Spiceworks user having to
 give you his or her password directly.</p>
@@ -199,7 +212,7 @@ reauthenticate with Spiceworks:</p>
   <span class="p">});</span>
 </code></pre>
 
-<h5 id="login-parameters">Login parameters</h5>
+<h4 id="login-parameters">Login parameters</h4>
 
 <table><thead>
 <tr>
@@ -260,6 +273,12 @@ the combination of <code>environment.app_host.auid</code> and
 </code></pre>
 
 <h4 id="step-3b.-verify-the-oauth2-token-with-spiceworks">Step 3b. Verify the OAuth2 token with Spiceworks</h4>
+
+<blockquote>
+<p><strong>Note:</strong> Currently, to use this API you must apply to receive an App UID and
+secret (<code>app_secret</code>). <a href="http://www.surveygizmo.com/s3/2206835/Challenge-Post-Access-Token-Request">Apply here
+now</a>.</p>
+</blockquote>
 
 <p>Recall that an OAuth2 access token is like a temporary password granted
 to your cloud app. Even if it were the real user&#39;s password, you would
