@@ -6,6 +6,9 @@ The source for http://developers.spiceworks.com.
 
 To get started:
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+
 ``` sh
 git clone git://github.com/spiceworks/developers.spiceworks.com
 cd developers.spiceworks.com
