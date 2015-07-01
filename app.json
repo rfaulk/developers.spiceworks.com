@@ -1,0 +1,9 @@
+{
+  "name": "Spiceworks Developers",
+  "description": "The source for http://developers.spiceworks.com.",
+  "repository": "https://github.com/rfaulk/developers.spiceworks.com",
+  "success_url": "/build/index.html",
+  "scripts": {
+    "postdeploy": "bundle && bundle exec middleman build"
+  }
+}
